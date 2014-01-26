@@ -89,7 +89,7 @@ interest in dynamics, visualization/animation, and have experience with Python,
 C/C++, and/or Javascript. PyDy has been developed during three previous GSoC
 grants as part of the `SymPy project <http://www.sympy.org>`_. The core
 software can derive symbolic equations of motion of complex multibody systems.
-`This example problem <http://www.moorepants.info/blog/npendulum.html>` gives
+`This example problem <http://www.moorepants.info/blog/npendulum.html>`_ gives
 you an idea of the current capabilities. This year we are focusing on code
 which interfaces these symbolic equations with modern tools for simulation and
 visualization (plotting and 3D animation) which will be developed under SymPy
