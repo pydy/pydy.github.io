@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Commands &mdash; The PyDy Website</title>
+    
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="The PyDy Website" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../index.html">The PyDy Website</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/pydy_logo.jpg" alt="Logo"/>
+            </a></p>
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Commands</a><ul>
+<li><a class="reference internal" href="#sympy-commands">SymPy Commands</a></li>
+<li><a class="reference internal" href="#mechanics-commands">Mechanics commands</a></li>
+<li><a class="reference internal" href="#functions">Functions</a></li>
+<li><a class="reference internal" href="#code-snippets">Code Snippets</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/examples/commands.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="commands">
+<h1>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h1>
+<p>What follows is a short rundown of the commands used in PyDy. All commands that
+you would type in an interactive session are preceded by &#8216;&#8217;&gt;&gt;&gt; &#8216;&#8217;.</p>
+<div class="section" id="sympy-commands">
+<h2>SymPy Commands<a class="headerlink" href="#sympy-commands" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>This imports all of the classes and functions in the &#8216;&#8217;SymPy&#8217;&#8217; package.  Now we
+can do some symbolic math:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s">&#39;x y z&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">e</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">z</span><span class="o">**</span><span class="mi">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<span class="go">x**2 + y**2 + z**2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">diff</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="go">2*x</span>
+</pre></div>
+</div>
+<p>This creates 3 symbols, x, y, and z, and illustrates how to form a SymPy
+expression and take its derivative.</p>
+</div>
+<div class="section" id="mechanics-commands">
+<h2>Mechanics commands<a class="headerlink" href="#mechanics-commands" title="Permalink to this headline">¶</a></h2>
+<p>What follows is a list of objects you can create, and functions you can run.
+The first step is to import the functions and classes related to mechanics:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy.physics.mechanics</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>==== Classes ====
+Here is a list of classes:</p>
+<blockquote>
+<div><ul class="simple">
+<li>ReferenceFrame</li>
+<li>Point</li>
+<li>Vector - not created directly</li>
+<li>Dyadic - not created directly</li>
+<li>Particle</li>
+<li>RigidBody</li>
+<li>KanesMethod</li>
+</ul>
+</div></blockquote>
+<p>You can call &#8216;&#8217;help(class)&#8217;&#8217; to see the help entry for &#8216;&#8217;class&#8217;&#8216;. For example,
+&#8216;&#8217;help(ReferenceFrame)&#8217;&#8217; to see the help entry for &#8216;&#8217;ReferenceFrame&#8217;&#8216;.</p>
+<p>=== Code Snippets ===
+Here are some brief usage examples of common functions and classes.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">q1</span><span class="p">,</span> <span class="n">q2</span> <span class="o">=</span> <span class="n">dynamicsymbols</span><span class="p">(</span><span class="s">&#39;q1 q2&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Creates two time varying symbols, &#8216;&#8217;q1&#8217;&#8217; and &#8216;&#8217;q2&#8217;&#8216;</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">N</span> <span class="o">=</span> <span class="n">ReferenceFrame</span><span class="p">(</span><span class="s">&#39;N&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This creates a new reference frame named N.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">N</span><span class="o">.</span><span class="n">x</span>
+</pre></div>
+</div>
+<p>Access to the &#8216;&#8217;x&#8217;&#8217; basis vector in the &#8216;&#8217;N&#8217;&#8217; reference frame</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">N</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">N</span><span class="o">.</span><span class="n">y</span>
+</pre></div>
+</div>
+<p>Creates a new vector, &#8216;&#8217;a&#8217;&#8216;, which is the sum of the &#8216;&#8217;x&#8217;&#8217; and &#8216;&#8217;y&#8217;&#8217; basis
+vectors in the &#8216;&#8217;N&#8217;&#8217; reference frame.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">P</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="s">&#39;P&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Creates a point named P.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">K</span> <span class="o">=</span> <span class="n">KanesMethod</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>FIXME Creates a new &#8216;&#8217;KanesMethod&#8217;&#8217; object, used to generate $F_r + F_r^*$,
+with &#8216;&#8217;N&#8217;&#8217; as the inertial reference frame.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">D</span> <span class="o">=</span> <span class="n">RigidBody</span><span class="p">(</span><span class="s">&#39;BodyD&#39;</span><span class="p">,</span> <span class="n">masscenter</span><span class="o">=</span><span class="n">P</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="n">N</span><span class="p">,</span> <span class="n">mass</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">inertia</span><span class="o">=</span><span class="n">I</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Creates a rigid body container and defines the center of mass location, the
+body fixed frame, the mass and the inertia.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Par</span> <span class="o">=</span> <span class="n">Particle</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Creates a new particle container.</p>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Here is a list of functions:</dt>
+<dd><ul class="first last simple">
+<li>mprint</li>
+<li>inertia</li>
+<li>mprint</li>
+<li>mpprint</li>
+<li>mlatex</li>
+<li>cross</li>
+<li>dot</li>
+<li>outer</li>
+<li>kinematic equations</li>
+</ul>
+</dd>
+</dl>
+<p>On each of them, you can call &#8216;&#8217;help(function)&#8217;&#8217; to see the help entry for
+&#8216;&#8217;function&#8217;&#8216;. For example, &#8216;&#8217;help(inertia)&#8217;&#8217; will describe what the &#8216;&#8217;inertia&#8217;&#8217;
+function is and how to use it.</p>
+</div>
+<div class="section" id="code-snippets">
+<h2>Code Snippets<a class="headerlink" href="#code-snippets" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">mechanics_printing</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Sets the default printing to use the mechanics printing.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">mprint</span><span class="p">(</span><span class="n">q1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Prints &#8216;&#8217;q1&#8217;&#8217; using the mechanics printer; use if mechanics_printing is not on.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">I</span> <span class="o">=</span> <span class="n">inertia</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Creates an inertia dyadic in the frame N with principle measure numbers of 1,
+2, and 3.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">mprint</span><span class="p">(</span><span class="n">kinematic_equations</span><span class="p">([</span><span class="n">u1</span><span class="p">,</span><span class="n">u2</span><span class="p">,</span><span class="n">u3</span><span class="p">],</span> <span class="p">[</span><span class="n">q1</span><span class="p">,</span><span class="n">q2</span><span class="p">,</span><span class="n">q3</span><span class="p">],</span> <span class="s">&#39;body&#39;</span><span class="p">,</span> <span class="s">&#39;313&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Prints out kinematic differential equations which relate the body fixed angular
+velocity measure numbers &#8216;&#8217;u1, u2, u3&#8217;&#8217; to the time derivatives of the
+coordinates &#8216;&#8217;q1, q2, q3&#8217;&#8216;, assuming a 313 (ZXZ) body fixed rotations.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../index.html">The PyDy Website</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, PyDy Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

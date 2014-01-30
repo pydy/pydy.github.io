@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Beginner’s Tutorial &mdash; The PyDy Website</title>
+    
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="The PyDy Website" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../index.html">The PyDy Website</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/pydy_logo.jpg" alt="Logo"/>
+            </a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/examples/beginners_tutorial.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="beginner-s-tutorial">
+<h1>Beginner&#8217;s Tutorial<a class="headerlink" href="#beginner-s-tutorial" title="Permalink to this headline">¶</a></h1>
+<p>Once you have SymPy installed on your machine it is time to explore the how it
+operates. The first step is to open up your python interpreter. This varies
+depending on your work style, but the simplest way is to type python in a
+command prompt:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python
+</pre></div>
+</div>
+<p>Once you are at the python command line the first step is to import basic
+functionality from SymPy and the Mechanics module, otherwise you will only have
+basic python commands available to work with. We will use the import * method
+to bring in all functions from the two modules:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy.physics.mechanics</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>You can now see what functions and variables that are available to you with:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This is a long list of available functions, as both packages have many. Read
+about the python import statement to learn about better ways to import only
+what you need. One good explanation is
+<a class="reference external" href="http://effbot.org/zone/import-confusion.htm">http://effbot.org/zone/import-confusion.htm</a>.</p>
+<p>To get started working with vectors we will need to create a reference frame,
+as all vectors need to be defined with respect to a reference frame. If you
+know the name of the command that you want to use simply use the builtin help
+function to bring up the documentation for the function. In our case we need to
+use the ReferenceFrame class:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">help</span><span class="p">(</span><span class="n">ReferenceFrame</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Press <cite>q</cite> to return to the command line. Now create an inertial reference frame
+called N for Newtonian as was described in the help:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">N</span> <span class="o">=</span> <span class="n">ReferenceFrame</span><span class="p">(</span><span class="s">&#39;N&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Keep in mind that N is the variable name of which the reference frame named &#8216;N&#8217;
+is stored. It is important to note that <cite>N</cite> is an object and it has properties
+and functions associated with it. To see a list of them type:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Notice that three of the properties are <cite>x</cite>, <cite>y</cite>, and <cite>z</cite>. These are the
+orthonormal unit vectors associated with the reference frame and are the
+building blocks for creating vectors. We can create a vector by simply building
+a linear combination of the unit vectors:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">*</span> <span class="n">N</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">N</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">N</span><span class="o">.</span><span class="n">z</span>
+</pre></div>
+</div>
+<p>Now a vector expressed in the N reference frame is stored in the variable <cite>v</cite>.
+We can print <cite>v</cite> to the screen by typing:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+<span class="go">N.x + 2*N.y + 3*N.z</span>
+</pre></div>
+</div>
+<p>The vector <cite>v</cite> can be manipulated as expected. You can multiply and divide them
+by scalars:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span> <span class="o">*</span> <span class="n">v</span>
+<span class="go">2*N.x + 4*N.y + 6*N.z</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">/</span> <span class="mf">3.0</span>
+<span class="go">0.333333333333333*N.x + 0.666666666666667*N.y + N.z</span>
+</pre></div>
+</div>
+<p>Note that three is expressed as <cite>3.0</cite> instead of <cite>3</cite>. The python language does
+integer division by default. There are ways around this, but for now simply
+remember to always declare numbers as floats (i.e. include a decimal).</p>
+<p>You can add and subtract vectors:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">+</span> <span class="n">v</span>
+<span class="go">2*N.x + 4*N.y + 6*N.z</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">w</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">*</span> <span class="n">N</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="mi">7</span> <span class="o">*</span> <span class="n">N</span><span class="o">.</span><span class="n">y</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">-</span> <span class="n">w</span>
+<span class="go">- 4*N.x - 5*N.y + 3*N.z</span>
+</pre></div>
+</div>
+<p>Vectors also have some useful properties:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can find the magnitude of a vector by typing:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span><span class="o">.</span><span class="n">magnitude</span><span class="p">()</span>
+<span class="go">sqrt(14)</span>
+</pre></div>
+</div>
+<p>You can compute a unit vector in the direction of <cite>v</cite>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span><span class="o">.</span><span class="n">normalize</span><span class="p">()</span>
+<span class="go">sqrt(14)/14*N.x + sqrt(14)/7*N.y + 3*sqrt(14)/14*N.z</span>
+</pre></div>
+</div>
+<p>You can find the measure numbers and the reference frame the vector was defined
+in with:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span><span class="o">.</span><span class="n">args</span>
+<span class="go">[([1]</span>
+<span class="go">[2]</span>
+<span class="go">[3], N)]</span>
+</pre></div>
+</div>
+<p>Dot and cross products of vectors can also be computed:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">dot</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
+<span class="go">19</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cross</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
+<span class="go">- 21*N.x + 15*N.y - 3*N.z</span>
+</pre></div>
+</div>
+<p>We&#8217;ve only used numbers as our measure numbers so far, but it is just as easy
+to use symbols. We will introduce six symbols for our measure numbers with the
+SymPy <cite>symbols</cite> [<cite>help(symbols) for the documentation</cite>] function:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">a3</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s">&#39;a1 a2 a3&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b1</span><span class="p">,</span> <span class="n">b2</span><span class="p">,</span> <span class="n">b3</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s">&#39;b1 b2 b3&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>And create two new vectors that are completely symbolic:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">a1</span> <span class="o">*</span> <span class="n">N</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">a2</span> <span class="o">*</span> <span class="n">N</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">a3</span> <span class="o">*</span> <span class="n">N</span><span class="o">.</span><span class="n">z</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">b1</span> <span class="o">*</span> <span class="n">N</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">b2</span> <span class="o">*</span> <span class="n">N</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">b3</span> <span class="o">*</span> <span class="n">N</span><span class="o">.</span><span class="n">z</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="go">a1*b1 + a2*b2 + a3*b3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cross</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="go">(a2*b3 - a3*b2)*N.x + (-a1*b3 + a3*b1)*N.y + (a1*b2 - a2*b1)*N.z</span>
+</pre></div>
+</div>
+<p>Numbers and symbols work together seamlessly:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">dot</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="go">a1 + 2*a2 + 3*a3</span>
+</pre></div>
+</div>
+<p>You can also differentiate a vector with respect to a variable in a reference
+frame:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>
+<span class="go">N.x</span>
+</pre></div>
+</div>
+<p>Vectors don&#8217;t have be defined with respect to just one reference frame. We can
+create a new reference frame and orient it with respect to the <cite>N</cite> frame that
+has already been created. We will use the <cite>orient</cite> method of the new frame to
+do a simple rotation through <cite>alpha</cite> about the <cite>N.x</cite> axis:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ReferenceFrame</span><span class="p">(</span><span class="s">&#39;A&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">alpha</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s">&#39;alpha&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">orient</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="s">&#39;Axis&#39;</span><span class="p">,</span> <span class="p">[</span><span class="n">alpha</span><span class="p">,</span> <span class="n">N</span><span class="o">.</span><span class="n">x</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Now the direction cosine matrix with of <cite>A</cite> with respect to <cite>N</cite> can be
+computed:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">dcm</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="go">[1,           0,          0]</span>
+<span class="go">[0,  cos(alpha), sin(alpha)]</span>
+<span class="go">[0, -sin(alpha), cos(alpha)]</span>
+</pre></div>
+</div>
+<p>Now that SymPy knows that <cite>A</cite> and <cite>N</cite> are oriented with respect to each other
+we can express the vectors that we originally wrote in the <cite>A</cite> frame:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span><span class="o">.</span><span class="n">express</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="go">A.x + (3*sin(alpha) + 2*cos(alpha))*A.y + (-2*sin(alpha) + 3*cos(alpha))*A.z</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">z</span> <span class="o">=</span> <span class="n">cross</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">z</span><span class="o">.</span><span class="n">express</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="n">a2</span><span class="o">*</span><span class="n">b3</span> <span class="o">-</span> <span class="n">a3</span><span class="o">*</span><span class="n">b2</span><span class="p">)</span><span class="o">*</span><span class="n">A</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="p">((</span><span class="n">a1</span><span class="o">*</span><span class="n">b2</span> <span class="o">-</span> <span class="n">a2</span><span class="o">*</span><span class="n">b1</span><span class="p">)</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">alpha</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="o">-</span><span class="n">a1</span><span class="o">*</span><span class="n">b3</span> <span class="o">+</span>
+<span class="go">a3*b1)*cos(alpha))*A.y + ((a1*b2 - a2*b1)*cos(alpha) + (a1*b3 - a3*b1)*sin(alpha))*A.z</span>
+</pre></div>
+</div>
+<p>In dynamics systems at least some of the relative orientation of reference
+frames and vectors are time varying. The mechanics module provides a way to
+specify quantities as time varying. Let&#8217;s define two variables <cite>beta</cite> and <cite>d</cite>
+as variables which are functions of time:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">beta</span><span class="p">,</span> <span class="n">d</span> <span class="o">=</span> <span class="n">dynamicsymbols</span><span class="p">(</span><span class="s">&#39;beta d&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now we can create a new reference frame that is oriented with respect to the A
+frame by <cite>beta</cite> and create a vector in that new frame that is a function of
+<cite>d</cite>. This time we will use the <cite>orientnew</cite> method of the <cite>A</cite> frame to create
+the new reference frame <cite>B</cite>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">B</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">orientnew</span><span class="p">(</span><span class="s">&#39;B&#39;</span><span class="p">,</span> <span class="s">&#39;Axis&#39;</span><span class="p">,</span> <span class="p">[</span><span class="n">beta</span><span class="p">,</span> <span class="n">A</span><span class="o">.</span><span class="n">y</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vec</span> <span class="o">=</span> <span class="n">d</span> <span class="o">*</span> <span class="n">B</span><span class="o">.</span><span class="n">z</span>
+</pre></div>
+</div>
+<p>We can now compute the angular velocity of the reference frame <cite>B</cite> with respect
+to other reference frames:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">ang_vel_in</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="go">beta&#39;*A.y</span>
+</pre></div>
+</div>
+<p>This allows us to now differentiate the vector, <cite>vec</cite>, with respect to time and
+a reference frame:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">vecdot</span> <span class="o">=</span> <span class="n">vec</span><span class="o">.</span><span class="n">dt</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vecdot</span>
+<span class="go">d*beta&#39;*B.x + d&#39;*B.z</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vecdot</span><span class="o">.</span><span class="n">express</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="go">(d*cos(beta)*beta&#39; + sin(beta)*d&#39;)*N.x + (d*sin(A)*sin(beta)*beta&#39; -</span>
+<span class="go">sin(A)*cos(beta)*d&#39;)*N.y + (-d*sin(beta)*cos(A)*beta&#39; +</span>
+<span class="go">cos(A)*cos(beta)*d&#39;)*N.z</span>
+</pre></div>
+</div>
+<p>The <cite>dynamicsymbols</cite> function also allows you to store the derivatives of time
+varying variables. For example, we can define <cite>omega</cite> as the first time
+derivative of <cite>beta</cite> which allows you to explicitly interact with the
+derivatives:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">theta</span> <span class="o">=</span> <span class="n">dynamicsymbols</span><span class="p">(</span><span class="s">&#39;theta&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">omega</span> <span class="o">=</span> <span class="n">dynamicsymbols</span><span class="p">(</span><span class="s">&#39;theta&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>At this point we now have all the tools needed to setup the kinematics for a
+dynamic system. Let&#8217;s start with a simple system where a point can move back
+and forth on a spinning disc. First create an inertial reference frame:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">N</span> <span class="o">=</span> <span class="n">ReferenceFrame</span><span class="p">(</span><span class="s">&#39;N&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now create a reference frame for the disc:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">D</span> <span class="o">=</span> <span class="n">ReferenceFrame</span><span class="p">(</span><span class="s">&#39;D&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The disc rotates with respect to <cite>N</cite> about the <cite>N.x</cite> axis through <cite>theta</cite>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">theta</span> <span class="o">=</span> <span class="n">dynamicsymbols</span><span class="p">(</span><span class="s">&#39;theta&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">D</span><span class="o">.</span><span class="n">orient</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="s">&#39;Axis&#39;</span><span class="p">,</span> <span class="p">[</span><span class="n">theta</span><span class="p">,</span> <span class="n">N</span><span class="o">.</span><span class="n">x</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Define one point at the origin of rotation which is fixed in <cite>N</cite>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">no</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="s">&#39;no&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">no</span><span class="o">.</span><span class="n">set_vel</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The second point, <cite>p</cite>, can move through <cite>x</cite> along the <cite>D.y</cite> axis:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="s">&#39;p&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">dynamicsymbols</span><span class="p">(</span><span class="s">&#39;x&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">D</span><span class="o">.</span><span class="n">y</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="o">.</span><span class="n">set_pos</span><span class="p">(</span><span class="n">no</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="o">.</span><span class="n">set_vel</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">dt</span><span class="p">(</span><span class="n">N</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>The velocity of the point in the <cite>N</cite> frame can now be computed:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="o">.</span><span class="n">vel</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="go">x&#39;*D.y + x*theta&#39;*D.z</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="o">.</span><span class="n">vel</span><span class="p">(</span><span class="n">N</span><span class="p">)</span><span class="o">.</span><span class="n">express</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="go">(-x*sin(theta)*theta&#39; + cos(theta)*x&#39;)*N.y + (x*cos(theta)*theta&#39; + sin(theta)*x&#39;)*N.z</span>
+</pre></div>
+</div>
+<p>The acceleration of the point can also be computed:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="o">.</span><span class="n">acc</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="go">(-x*theta&#39;**2 + x&#39;&#39;)*D.y + (x*theta&#39;&#39; + 2*theta&#39;*x&#39;)*D.z</span>
+</pre></div>
+</div>
+<p>Now let&#8217;s imagine that the point, <cite>p</cite>, is constrained by a spring with
+stiffness, <cite>k</cite>, to point, <cite>no</cite>. This means that a force...To be continued.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../index.html">The PyDy Website</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, PyDy Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>
