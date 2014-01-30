@@ -11,7 +11,10 @@ details.
 This example has 2 particles of the same mass, on massless links of the same
 length.
 
-{{ :wiki:examples:double_pendulum.svg }}
+.. image:: double_pendulum.svg
+   :height: 500
+   :width: 500
+   :align: center
 
 Deriving the equations of motion with SymPy
 -------------------------------------------
@@ -115,7 +118,10 @@ settings file as "python outfile.py settings_file.csv".
 	run outfile.py
 
 
-{{ :wiki:examples:double_pendulum_scipy_plot.png }}
+.. image:: double_pendulum_scipy_plot.png
+   :height: 500
+   :width: 500
+   :align: center
 
 Integration with Matlab
 -----------------------
@@ -225,7 +231,10 @@ The states as a function of time are now available. Use Matlab's plotting functi
 	legend('q1 [rad]', 'q2 [rad]', 'u1 [rad/s]', 'u2 [rad/s]')
 
 
-{{ :wiki:examples:double_pendulum_matlab_plot.png }}
+.. image:: double_pendulum_matlab_plot.png
+   :height: 500
+   :width: 500
+   :align: center
 
 Simulating with C/C++, `GSL <http://www.gnu.org/s/gsl/manual/html_node/>`_, plotting with `matplotlib <http://matplotlib.sourceforge.net/>`_
 --------------------------------------------------------------------------------------------------------------------------------------------
@@ -363,21 +372,25 @@ of Matplotlib:
 	plt.show()
 
 Which results in the following nice plot:
-{{ :wiki:examples:double_pendulum_plot.png }}
+
+.. image:: double_pendulum_plot.png
+   :height: 500
+   :width: 500
+   :align: center
 
 Animation with Matplotlib
 -------------------------
 
-Matlplotlib 1.1 has an animation module that makes 2D animation easy. Check out
+Matplotlib 1.1 has an animation module that makes 2D animation easy. Check out
 this tutorial for animating a double pendulum:
 
-{{ youtube>32cjc6V0OZY }}
+`Matplotlib animation <https://www.youtube.com/watch?v=32cjc6V0OZY>`_
 
-[Double pendulum animation Code](http://matplotlib.sourceforge.net/examples/animation/double_pendulum_animated.html)
+`Double pendulum animation Code <http://matplotlib.sourceforge.net/examples/animation/double_pendulum_animated.html>`_
 
 Resources
 ---------
 
 All of the source code for the examples can be found in
-[https://github.com/gilbertgede/pydy_examples](https///github.com/gilbertgede/pydy_examples).
+`<https://github.com/gilbertgede/pydy_examples>`_.
 

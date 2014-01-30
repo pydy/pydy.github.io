@@ -181,6 +181,13 @@ The pendulum is an interesting system. It is very sensitive to initial
 conditions. Changing :math:`\phi` slightly when :math:`\theta` is at different
 angles shows that the system is very unpredictable.
 
-{{ :wiki:examples:chaos_pendulum_stable_matlab.png }}
-{{ :wiki:examples:chaos_pendulum_chaotic_matlab.png }}
+.. image:: chaos_pendulum_stable_matlab.png
+   :height: 500
+   :width: 500
+   :align: center
+
+.. image:: chaos_pendulum_chaotic_matlab.png
+   :height: 500
+   :width: 500
+   :align: center
 

@@ -6,13 +6,6 @@
 Welcome to the PyDy Wiki!
 =========================
 
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-
-
-
 Introduction
 ------------
 
@@ -98,23 +91,12 @@ experience in Python, C/C++, and Javascript languages, agile open source
 development practices, version control, large scale collaboration, and
 multibody dynamics including Kane’s and Lagrange’s methods.
 
-If you are interested in applying check out the 
+If you are interested in applying check out the
 :doc:`getting started page <\management\google_summer_of_code>`. Then send an
-email to the 
+email to the
 `PyDy mailing list <https://groups.google.com/forum/?fromgroups#!forum/pydy>`_
 with a brief statement explaining your experience and why you think you are a
 good candidate for the position(s). The PyDy team will work directly with the
 top candidates to strengthen their GSoC applications.
 
-
-
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
