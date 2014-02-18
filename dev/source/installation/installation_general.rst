@@ -1,3 +1,6 @@
+General Installation Information
+================================
+
 To run the examples on this site you will need to install
 `Python <http://www.python.org>`_ and `SymPy <http://www.sympy.org>`_, at a
 minimum.  Python versions 2.7 or 3.3 should work fine with most commonly used
@@ -18,14 +21,16 @@ The other tools that you will likely want to install are
 
 Some of these are part of the
 `SciPy Stack Specification <http://scipy.github.com/stackspec.html>`_.
+
+Platform Installation Instructions
+----------------------------------
+
 Detailed instructions for installing on Windows, Mac OS X, and GNU/Linux are
 below:
 
-*  [Generic Installation Instructions](GenericInstallationInstructions)
+*  :doc:`Windows Installation </installation/windowsinstallation>`
 
-*  [Windows Installation](WindowsInstallation)
+*  :doc:`Max OS X Installation </installation/macosxinstallation>`
 
-*  [Mac OS X Installation](MacOSXInstallation)
-
-*  [GNU/Linux Installation](GNULinuxInstallation)
+*  :doc:`GNU/Linux Installation </installation/gnulinuxinstallation>`
 

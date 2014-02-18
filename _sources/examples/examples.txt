@@ -6,7 +6,9 @@ Some general help and examples for using PyDy. Please add your own!
 Tutorials and References
 ------------------------
 
-*  [Commands](commands)
+*  :doc:`Commands </examples/commands>`
+
+*  :doc:`Beginner's Tutorial </examples/beginners_tutorial>`
 
 Internal Examples
 -----------------

@@ -304,7 +304,7 @@ form the ODE function, as well as kinetic and potential energy functions for
 the double pendulum.  All of the functions in the following file were obtained
 by a simple copy/paste of the output of the ccode() function in Sympy.</p>
 <p><strong>double_pendulum.cc</strong></p>
-<div class="highlight-c"><pre>#include &quot;double_pendulum.h&quot;
+<div class="highlight-c"><div class="highlight"><pre>#include &quot;double_pendulum.h&quot;
 
 #include `&lt;cmath&gt;`
 #include `&lt;gsl/gsl_errno.h&gt;`
@@ -332,7 +332,8 @@ int double_pendulum_ode(double t, const double x[], double dxdt[], void *_params
     dxdt[2] = (-g*sin(x[0])*pow(sin(x[1]), 2) + 2*g*sin(x[0]) - g*sin(x[1])*cos(x[0])*cos(x[1]) + 2*l*pow(x[2], 2)*sin(x[0])*cos(x[0])*pow(cos(x[1]), 2) - l*pow(x[2], 2)*sin(x[0])*cos(x[0]) - 2*l*pow(x[2], 2)*sin(x[1])*pow(cos(x[0]), 2)*cos(x[1]) + l*pow(x[2], 2)*sin(x[1])*cos(x[1]) + l*pow(x[3], 2)*sin(x[0])*cos(x[1]) - l*pow(x[3], 2)*sin(x[1])*cos(x[0]))/(l*(pow(sin(x[0]), 2)*pow(sin(x[1]), 2) + 2*sin(x[0])*sin(x[1])*cos(x[0])*cos(x[1]) + pow(cos(x[0]), 2)*pow(cos(x[1]), 2) - 2)) ;
     dxdt[3] = (-sin(x[0])*sin(x[1])/2 - cos(x[0])*cos(x[1])/2)*(2*g*l*m*sin(x[0]) - pow(l, 2)*m*(-sin(x[0])*cos(x[1]) + sin(x[1])*cos(x[0]))*pow(x[3], 2))/(pow(l, 2)*m*(sin(x[0])*sin(x[1])/2 + cos(x[0])*cos(x[1])/2)*(sin(x[0])*sin(x[1]) + cos(x[0])*cos(x[1])) - pow(l, 2)*m) + (g*l*m*sin(x[1]) - pow(l, 2)*m*(sin(x[0])*cos(x[1]) - sin(x[1])*cos(x[0]))*pow(x[2], 2))/(pow(l, 2)*m*(sin(x[0])*sin(x[1])/2 + cos(x[0])*cos(x[1])/2)*(sin(x[0])*sin(x[1]) + cos(x[0])*cos(x[1])) - pow(l, 2)*m);
     return GSL_SUCCESS;
-}</pre>
+}
+</pre></div>
 </div>
 <p>To numerically integrate the equations, and save the time history of the states
 and energies to a data file, our main driver is as follows:</p>
@@ -439,7 +440,7 @@ this tutorial for animating a double pendulum:</p>
     </div>
     <div class="footer">
         &copy; Copyright 2014, PyDy Team.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
     </div>
   </body>
 </html>
