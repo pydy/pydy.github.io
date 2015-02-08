@@ -92,7 +92,7 @@ experience in Python, C/C++, and Javascript languages, agile open source
 development practices, version control, large scale collaboration, and
 multibody dynamics including Kane’s and Lagrange’s methods.&lt;/p&gt;
 &lt;p&gt;If you are interested in applying check out the
-&lt;a class=&quot;reference internal&quot; href=&quot;management/google_summer_of_code.html&quot;&gt;&lt;em&gt;getting started page&lt;/em&gt;&lt;/a&gt;. Then send an
+&lt;tt class=&quot;xref doc docutils literal&quot;&gt;&lt;span class=&quot;pre&quot;&gt;getting&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;started&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;page&lt;/span&gt;&lt;/tt&gt;. Then send an
 email to the
 &lt;a class=&quot;reference external&quot; href=&quot;https://groups.google.com/forum/?fromgroups#!forum/pydy&quot;&gt;PyDy mailing list&lt;/a&gt;
 with a brief statement explaining your experience and why you think you are a
