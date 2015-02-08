@@ -10,6 +10,7 @@ Tutorials and References
 
 *  :doc:`Beginner's Tutorial </examples/beginners_tutorial>`
 
+
 Internal Examples
 -----------------
 
@@ -29,4 +30,6 @@ External Examples
 *  `N Link Pendulum <http://www.moorepants.info/blog/npendulum.html>`_
 
 *  `Another bicycle model <https://github.com/hazelnusse/bicycle.model>`_
+
+*  `Human Balance Tutorial <https://github.com/pydy/pydy-tutorial-pycon-2014>`_
 
