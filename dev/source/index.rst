@@ -41,6 +41,16 @@ and our [history](history) or [examples](examples).
 Announcements
 -------------
 
+February 12, 2014
+^^^^^^^^^^^^^^^^^
+
+Google Summer of Code is upon us again. PyDy will likely be participating as
+it's own organization or under the umbrella of another. See the `Github Wiki
+<http://github.com/pydy/pydy/wiki>`_ for more information. Student applications
+are due on March
+21st.
+
+
 January 22, 2014
 ^^^^^^^^^^^^^^^^
 
