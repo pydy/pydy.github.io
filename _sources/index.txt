@@ -41,6 +41,16 @@ and our [history](history) or [examples](examples).
 Announcements
 -------------
 
+February 12, 2014
+^^^^^^^^^^^^^^^^^
+
+Google Summer of Code is upon us again. PyDy will likely be participating as
+it's own organization or under the umbrella of another. See the `Github Wiki
+<http://github.com/pydy/pydy/wiki>`_ for more information. Student applications
+are due on March
+21st.
+
+
 January 22, 2014
 ^^^^^^^^^^^^^^^^
 
@@ -82,8 +92,8 @@ to PyDy:
 *  Prasoon Shukla (Vector calculus module): Stefan Krastanov and Gilbert Gede
 
 *  Sachin Joglekar (Addition of electromagnetism features to sympy.physics):
-  Gilbert Gede and Stefan Krastanov
- 
+   Gilbert Gede and Stefan Krastanov
+
 Join me in congratulating these students on their acceptance.
 
 February 23, 2013
@@ -108,7 +118,7 @@ development practices, version control, large scale collaboration, and
 multibody dynamics including Kane’s and Lagrange’s methods.
 
 If you are interested in applying check out the
-:doc:`getting started page <\management\google_summer_of_code>`. Then send an
+:doc:`getting started page </management/google_summer_of_code>`. Then send an
 email to the
 `PyDy mailing list <https://groups.google.com/forum/?fromgroups#!forum/pydy>`_
 with a brief statement explaining your experience and why you think you are a
