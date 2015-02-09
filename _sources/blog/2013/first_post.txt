@@ -28,5 +28,3 @@ email to the
 with a brief statement explaining your experience and why you think you are a
 good candidate for the position(s). The PyDy team will work directly with the
 top candidates to strengthen their GSoC applications.
-
-

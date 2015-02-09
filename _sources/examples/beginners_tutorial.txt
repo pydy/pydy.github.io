@@ -6,7 +6,7 @@ operates. The first step is to open up your python interpreter. This varies
 depending on your work style, but the simplest way is to type python in a
 command prompt:
 
-.. code-block:: bash
+.. code:: bash
 
     $ python
 
@@ -15,14 +15,14 @@ functionality from SymPy and the Mechanics module, otherwise you will only have
 basic python commands available to work with. We will use the import * method
 to bring in all functions from the two modules:
 
-.. code-block:: python
+.. code:: python
 
     >>> from sympy import *
     >>> from sympy.physics.mechanics import *
 
 You can now see what functions and variables that are available to you with:
 
-.. code-block:: python
+.. code:: python
 
     >>> dir()
 
@@ -37,14 +37,14 @@ know the name of the command that you want to use simply use the builtin help
 function to bring up the documentation for the function. In our case we need to
 use the ReferenceFrame class:
 
-.. code-block:: python
+.. code:: python
 
     >>> help(ReferenceFrame)
 
 Press `q` to return to the command line. Now create an inertial reference frame
 called N for Newtonian as was described in the help:
 
-.. code-block:: python
+.. code:: python
 
     >>> N = ReferenceFrame('N')
 
@@ -52,7 +52,7 @@ Keep in mind that N is the variable name of which the reference frame named 'N'
 is stored. It is important to note that `N` is an object and it has properties
 and functions associated with it. To see a list of them type:
 
-.. code-block:: python
+.. code:: python
 
     >>> dir(N)
 Notice that three of the properties are `x`, `y`, and `z`. These are the
@@ -60,14 +60,14 @@ orthonormal unit vectors associated with the reference frame and are the
 building blocks for creating vectors. We can create a vector by simply building
 a linear combination of the unit vectors:
 
-.. code-block:: python
+.. code:: python
 
     >>> v = 1 * N.x + 2 * N.y + 3 * N.z
 
 Now a vector expressed in the N reference frame is stored in the variable `v`.
 We can print `v` to the screen by typing:
 
-.. code-block:: python
+.. code:: python
 
     >>> print(v)
     N.x + 2*N.y + 3*N.z
@@ -75,7 +75,7 @@ We can print `v` to the screen by typing:
 The vector `v` can be manipulated as expected. You can multiply and divide them
 by scalars:
 
-.. code-block:: python
+.. code:: python
 
     >>> 2 * v
     2*N.x + 4*N.y + 6*N.z
@@ -88,7 +88,7 @@ remember to always declare numbers as floats (i.e. include a decimal).
 
 You can add and subtract vectors:
 
-.. code-block:: python
+.. code:: python
 
     >>> v + v
     2*N.x + 4*N.y + 6*N.z
@@ -98,20 +98,20 @@ You can add and subtract vectors:
 
 Vectors also have some useful properties:
 
-.. code-block:: python
+.. code:: python
 
     >>> dir(v)
 
 You can find the magnitude of a vector by typing:
 
-.. code-block:: python
+.. code:: python
 
     >>> v.magnitude()
     sqrt(14)
 
 You can compute a unit vector in the direction of `v`:
 
-.. code-block:: python
+.. code:: python
 
     >>> v.normalize()
     sqrt(14)/14*N.x + sqrt(14)/7*N.y + 3*sqrt(14)/14*N.z
@@ -119,7 +119,7 @@ You can compute a unit vector in the direction of `v`:
 You can find the measure numbers and the reference frame the vector was defined
 in with:
 
-.. code-block:: python
+.. code:: python
 
     >>> v.args
     [([1]
@@ -128,7 +128,7 @@ in with:
 
 Dot and cross products of vectors can also be computed:
 
-.. code-block:: python
+.. code:: python
 
     >>> dot(v, w)
     19
@@ -139,14 +139,14 @@ We've only used numbers as our measure numbers so far, but it is just as easy
 to use symbols. We will introduce six symbols for our measure numbers with the
 SymPy `symbols` [`help(symbols) for the documentation`] function:
 
-.. code-block:: python
+.. code:: python
 
     >>> a1, a2, a3 = symbols('a1 a2 a3')
     >>> b1, b2, b3 = symbols('b1 b2 b3')
 
 And create two new vectors that are completely symbolic:
 
-.. code-block:: python
+.. code:: python
 
     >>> x = a1 * N.x + a2 * N.y + a3 * N.z
     >>> y = b1 * N.x + b2 * N.y + b3 * N.z
@@ -157,7 +157,7 @@ And create two new vectors that are completely symbolic:
 
 Numbers and symbols work together seamlessly:
 
-.. code-block:: python
+.. code:: python
 
     >>> dot(v, x)
     a1 + 2*a2 + 3*a3
@@ -165,7 +165,7 @@ Numbers and symbols work together seamlessly:
 You can also differentiate a vector with respect to a variable in a reference
 frame:
 
-.. code-block:: python
+.. code:: python
 
     >>> x.diff(a1, N)
     N.x
@@ -175,7 +175,7 @@ create a new reference frame and orient it with respect to the `N` frame that
 has already been created. We will use the `orient` method of the new frame to
 do a simple rotation through `alpha` about the `N.x` axis:
 
-.. code-block:: python
+.. code:: python
 
     >>> A = ReferenceFrame('A')
     >>> alpha = symbols('alpha')
@@ -184,7 +184,7 @@ do a simple rotation through `alpha` about the `N.x` axis:
 Now the direction cosine matrix with of `A` with respect to `N` can be
 computed:
 
-.. code-block:: python
+.. code:: python
 
     >>> A.dcm(N)
     [1,           0,          0]
@@ -194,7 +194,7 @@ computed:
 Now that SymPy knows that `A` and `N` are oriented with respect to each other
 we can express the vectors that we originally wrote in the `A` frame:
 
-.. code-block:: python
+.. code:: python
 
     >>> v.express(A)
     A.x + (3*sin(alpha) + 2*cos(alpha))*A.y + (-2*sin(alpha) + 3*cos(alpha))*A.z
@@ -208,7 +208,7 @@ frames and vectors are time varying. The mechanics module provides a way to
 specify quantities as time varying. Let's define two variables `beta` and `d`
 as variables which are functions of time:
 
-.. code-block:: python
+.. code:: python
 
     >>> beta, d = dynamicsymbols('beta d')
 
@@ -217,7 +217,7 @@ frame by `beta` and create a vector in that new frame that is a function of
 `d`. This time we will use the `orientnew` method of the `A` frame to create
 the new reference frame `B`:
 
-.. code-block:: python
+.. code:: python
 
     >>> B = A.orientnew('B', 'Axis', [beta, A.y])
     >>> vec = d * B.z
@@ -225,7 +225,7 @@ the new reference frame `B`:
 We can now compute the angular velocity of the reference frame `B` with respect
 to other reference frames:
 
-.. code-block:: python
+.. code:: python
 
     >>> B.ang_vel_in(N)
     beta'*A.y
@@ -233,7 +233,7 @@ to other reference frames:
 This allows us to now differentiate the vector, `vec`, with respect to time and
 a reference frame:
 
-.. code-block:: python
+.. code:: python
 
     >>> vecdot = vec.dt(N)
     >>> vecdot
@@ -248,7 +248,7 @@ varying variables. For example, we can define `omega` as the first time
 derivative of `beta` which allows you to explicitly interact with the
 derivatives:
 
-.. code-block:: python
+.. code:: python
 
     >>> theta = dynamicsymbols('theta')
     >>> omega = dynamicsymbols('theta', 1)
@@ -257,33 +257,33 @@ At this point we now have all the tools needed to setup the kinematics for a
 dynamic system. Let's start with a simple system where a point can move back
 and forth on a spinning disc. First create an inertial reference frame:
 
-.. code-block:: python
+.. code:: python
 
     >>> N = ReferenceFrame('N')
 
 Now create a reference frame for the disc:
 
-.. code-block:: python
+.. code:: python
 
     >>> D = ReferenceFrame('D')
 
 The disc rotates with respect to `N` about the `N.x` axis through `theta`:
 
-.. code-block:: python
+.. code:: python
 
     >>> theta = dynamicsymbols('theta')
     >>> D.orient(N, 'Axis', [theta, N.x])
 
 Define one point at the origin of rotation which is fixed in `N`:
 
-.. code-block:: python
+.. code:: python
 
     >>> no = Point('no')
     >>> no.set_vel(N, 0)
 
 The second point, `p`, can move through `x` along the `D.y` axis:
 
-.. code-block:: python
+.. code:: python
 
     >>> p = Point('p')
     >>> x = dynamicsymbols('x')
@@ -293,7 +293,7 @@ The second point, `p`, can move through `x` along the `D.y` axis:
 
 The velocity of the point in the `N` frame can now be computed:
 
-.. code-block:: python
+.. code:: python
 
     >>> p.vel(N)
     x'*D.y + x*theta'*D.z
@@ -302,7 +302,7 @@ The velocity of the point in the `N` frame can now be computed:
 
 The acceleration of the point can also be computed:
 
-.. code-block:: python
+.. code:: python
 
     >>> p.acc(N)
     (-x*theta'**2 + x'')*D.y + (x*theta'' + 2*theta'*x')*D.z

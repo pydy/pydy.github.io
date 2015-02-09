@@ -9,20 +9,14 @@ Foundation. The following projects have been accepted:
 
 Student (Project): Mentor
 
-
-*  Tarun Gaba (PyDy: Visualization): Jason Moore
-
-*  Varun Josh (PyDy: Code Generation for sympy.physics.mechanics): Jason Moore
+- Tarun Gaba (PyDy: Visualization): Jason Moore
+- Varun Josh (PyDy: Code Generation for sympy.physics.mechanics): Jason Moore
 
 Additionally, two related proposals will be accepted through SymPy that relate
 to PyDy:
 
+-  Prasoon Shukla (Vector calculus module): Stefan Krastanov and Gilbert Gede
+-  Sachin Joglekar (Addition of electromagnetism features to sympy.physics):
+   Gilbert Gede and Stefan Krastanov
 
-*  Prasoon Shukla (Vector calculus module): Stefan Krastanov and Gilbert Gede
-
-*  Sachin Joglekar (Addition of electromagnetism features to sympy.physics):
-  Gilbert Gede and Stefan Krastanov
- 
 Join me in congratulating these students on their acceptance.
-
-

@@ -7,14 +7,14 @@ you would type in an interactive session are preceded by ''>>> ''.
 SymPy Commands
 --------------
 
-.. code-block:: python
+.. code:: python
 
     >>> from sympy import *
 
 This imports all of the classes and functions in the ''SymPy'' package.  Now we
 can do some symbolic math:
 
-.. code-block:: python
+.. code:: python
 
     >>> x, y, z = symbols('x y z')
     >>> e = x**2 + y**2 + z**2
@@ -32,11 +32,13 @@ Mechanics commands
 What follows is a list of objects you can create, and functions you can run.
 The first step is to import the functions and classes related to mechanics:
 
-.. code-block:: python
+.. code:: python
 
     >>> from sympy.physics.mechanics import *
 
-==== Classes ====
+Classes
+-------
+
 Here is a list of classes:
   * ReferenceFrame
   * Point
@@ -48,55 +50,57 @@ Here is a list of classes:
 You can call ''help(class)'' to see the help entry for ''class''. For example,
 ''help(ReferenceFrame)'' to see the help entry for ''ReferenceFrame''.
 
-=== Code Snippets ===
-Here are some brief usage examples of common functions and classes. 
+Code Snippets
+-------------
 
-.. code-block:: python
+Here are some brief usage examples of common functions and classes.
+
+.. code:: python
 
     >>> q1, q2 = dynamicsymbols('q1 q2')
 
 Creates two time varying symbols, ''q1'' and ''q2''
 
-.. code-block:: python
+.. code:: python
 
     >>> N = ReferenceFrame('N')
 
 This creates a new reference frame named N.
 
-.. code-block:: python
+.. code:: python
 
     >>> N.x
 
 Access to the ''x'' basis vector in the ''N'' reference frame
 
-.. code-block:: python
+.. code:: python
 
     >>> a = N.x + N.y
 
 Creates a new vector, ''a'', which is the sum of the ''x'' and ''y'' basis
 vectors in the ''N'' reference frame.
 
-.. code-block:: python
+.. code:: python
 
     >>> P = Point('P')
 
 Creates a point named P.
 
-.. code-block:: python
+.. code:: python
 
     >>> K = KanesMethod(N)
 
-FIXME Creates a new ''KanesMethod'' object, used to generate $F_r + F_r^*$,
-with ''N'' as the inertial reference frame.
+FIXME Creates a new ''KanesMethod'' object, used to generate :math:`F_r +
+F_r^*`, with ''N'' as the inertial reference frame.
 
-.. code-block:: python
+.. code:: python
 
     >>> D = RigidBody('BodyD', masscenter=P, frame=N, mass=2, inertia=I)
 
 Creates a rigid body container and defines the center of mass location, the
 body fixed frame, the mass and the inertia.
 
-.. code-block:: python
+.. code:: python
 
     >>> Par = Particle()
 
@@ -122,26 +126,26 @@ function is and how to use it.
 Code Snippets
 -------------
 
-.. code-block:: python
+.. code:: python
 
     >>> mechanics_printing()
 
 Sets the default printing to use the mechanics printing.
 
-.. code-block:: python
+.. code:: python
 
     >>> mprint(q1)
 
 Prints ''q1'' using the mechanics printer; use if mechanics_printing is not on.
 
-.. code-block:: python
+.. code:: python
 
     >>> I = inertia(N, 1, 2, 3)
 
 Creates an inertia dyadic in the frame N with principle measure numbers of 1,
 2, and 3.
 
-.. code-block:: python
+.. code:: python
 
     >>> mprint(kinematic_equations([u1,u2,u3], [q1,q2,q3], 'body', '313'))
 

@@ -1,10 +1,26 @@
-.. PyDy documentation master file, created by
-   sphinx-quickstart on Sun Jan 26 13:02:27 2014.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+PyDy: Multibody Dynamics with Python
+====================================
 
-Welcome to the PyDy Wiki!
-=========================
+Introduction
+------------
+
+Welcome to the PyDy project website. PyDy, short for Python Dynamics, is a both
+a *workflow* that utlizes an array of scientific tools written in the Python
+programming language to study multibody dynamics and a set of software packages
+that help automate and enhance the workflow. The core of this toolset is the
+SymPy_ **mechanics** package which generates symbolic equations of motion for
+complex multibody systems and PyDy which extends the SymPy output to the
+numerical domain for simulation, analyses, and visualization. PyDy builds on
+the popular scientific Python stack such as NumPy_, SciPy_, IPython_,
+matplotlib_, Cython_, and Theano_.
+
+.. _SymPy: http://www.sympy.org
+.. _NumPy: http://numpy.org
+.. _SciPy: http://scipy.org
+.. _IPython: http://ipython.org
+.. _matplotlib: http://matplotlib.org
+.. _Cython: http://cython.org/
+.. _Theano: http://deeplearning.net/software/theano/
 
 Site Overview
 -------------
@@ -19,26 +35,10 @@ Site Overview
 
    installation/installation_general
    examples/examples
-   management/project_management
-
-
-Introduction
-------------
-
-Welcome to the PyDy project page. PyDy, short for Python Dynamics, is a
-*workflow* that utlizes an array of scientific tools written in the Python
-programming language to study multibody dynamics. The core of this toolset is
-the `SymPy <http://www.sympy.org>`_ **mechanics** package which generates
-symbolic equations of motion for complex multibody systems. The remaining tools
-used in the PyDy workflow are popular scientific Python packages such as
-`NumPy <http://numpy.org/>`_, `SciPy <http://scipy.org>`_,
-`IPython <http://ipython.org>`_, and `matplotlib <http://matplotlib.org>`_
-which provide code for numerical analyses, simulation, and visualization. We
-are a group of engineers and scientists who for one reason or another prefer to
-work in Python. You can learn more by reading about our [features](features)
-and our [history](history) or [examples](examples).
+   history
+   gsoc
 
 Blog
 ----
-.. postlist:: 4
 
+.. postlist:: 4

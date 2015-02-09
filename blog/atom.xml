@@ -36,9 +36,8 @@ of Code page for more information. Student applications are due on March 21st.&l
 
 &lt;p&gt;PyDy is going to be at PyCon 2014 in Montréal! Jason Moore&amp;#8217;s presentation
 titled &amp;#8220;Dynamics and Control with Python&amp;#8221; has been accepted as a Tutorial, to
-be shown 9:00am - 12:00pm on Wednesday, April 9, 2014
-(&lt;a class=&quot;reference external&quot; href=&quot;https://us.pycon.org/2014/schedule/tutorials/&quot;&gt;tutorial schedules&lt;/a&gt;). Topics
-covered will include:&lt;/p&gt;
+be shown 9:00am - 12:00pm on Wednesday, April 9, 2014 (&lt;a class=&quot;reference external&quot; href=&quot;https://us.pycon.org/2014/schedule/tutorials/&quot;&gt;tutorial schedules&lt;/a&gt;). Topics covered will
+include:&lt;/p&gt;
 &lt;ul class=&quot;simple&quot;&gt;
 &lt;li&gt;Symbolic derivation of equations of motion for rigid body systems&lt;/li&gt;
 &lt;li&gt;Numerical simulation of the system&lt;/li&gt;
@@ -73,10 +72,9 @@ Foundation. The following projects have been accepted:&lt;/p&gt;
 to PyDy:&lt;/p&gt;
 &lt;ul class=&quot;simple&quot;&gt;
 &lt;li&gt;Prasoon Shukla (Vector calculus module): Stefan Krastanov and Gilbert Gede&lt;/li&gt;
-&lt;li&gt;Sachin Joglekar (Addition of electromagnetism features to sympy.physics):&lt;/li&gt;
+&lt;li&gt;Sachin Joglekar (Addition of electromagnetism features to sympy.physics):
+Gilbert Gede and Stefan Krastanov&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;div&gt;Gilbert Gede and Stefan Krastanov&lt;/div&gt;&lt;/blockquote&gt;
 &lt;p&gt;Join me in congratulating these students on their acceptance.&lt;/p&gt;
 &lt;/div&gt;
 </content>
