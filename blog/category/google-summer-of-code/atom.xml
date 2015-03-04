@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Blog - Posts in Google Summer of Code</title>
+  <id>pydy.github.io/blog/category/google-summer-of-code/atom.xml</id>
+  <updated>2014-02-12T00:00:00Z</updated>
+  <link href="pydy.github.io" />
+  <link href="pydy.github.io/blog/category/google-summer-of-code/atom.xml" rel="self" />
+  <generator uri="http://blog.readthedocs.org" version="0.4">ABlog</generator>
+  <entry xml:base="pydy.github.io/blog/category/google-summer-of-code/atom.xml">
+    <title type="text">Google Summer of Code 2014</title>
+    <id>pydy.github.io/blog/2014/feb2014.html</id>
+    <updated>2014-02-12T00:00:00Z</updated>
+    <published>2014-02-12T00:00:00Z</published>
+    <link href="pydy.github.io/blog/2014/feb2014.html" />
+    <author>
+      <name></name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;google-summer-of-code-2014&quot;&gt;
+
+&lt;p&gt;Google Summer of Code is upon us again. PyDy will likely be participating as
+it&amp;#8217;s own organization or under the umbrella of another. See the Google Summer
+of Code page for more information. Student applications are due on March 21st.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="pydy.github.io/blog/category/google-summer-of-code/atom.xml">
+    <title type="text">Google Summer of Code 2013 Results</title>
+    <id>pydy.github.io/blog/2013/may31_2013.html</id>
+    <updated>2013-05-31T00:00:00Z</updated>
+    <published>2013-05-31T00:00:00Z</published>
+    <link href="pydy.github.io/blog/2013/may31_2013.html" />
+    <author>
+      <name></name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;google-summer-of-code-2013-results&quot;&gt;
+
+&lt;p&gt;Google has announced the results for Google Summer of Code. We are proud to
+announce that we got two slots from Google under the Python Software
+Foundation. The following projects have been accepted:&lt;/p&gt;
+&lt;p&gt;Student (Project): Mentor&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Tarun Gaba (PyDy: Visualization): Jason Moore&lt;/li&gt;
+&lt;li&gt;Varun Josh (PyDy: Code Generation for sympy.physics.mechanics): Jason Moore&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Additionally, two related proposals will be accepted through SymPy that relate
+to PyDy:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Prasoon Shukla (Vector calculus module): Stefan Krastanov and Gilbert Gede&lt;/li&gt;
+&lt;li&gt;Sachin Joglekar (Addition of electromagnetism features to sympy.physics):
+Gilbert Gede and Stefan Krastanov&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Join me in congratulating these students on their acceptance.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry xml:base="pydy.github.io/blog/category/google-summer-of-code/atom.xml">
+    <title type="text">Google Summer of Code 2013</title>
+    <id>pydy.github.io/blog/2013/first_post.html</id>
+    <updated>2013-02-23T00:00:00Z</updated>
+    <published>2013-02-23T00:00:00Z</published>
+    <link href="pydy.github.io/blog/2013/first_post.html" />
+    <author>
+      <name></name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;google-summer-of-code-2013&quot;&gt;
+
+&lt;p&gt;Want to develop multibody dynamics software this summer in a large
+collaborative open source team?&lt;/p&gt;
+&lt;p&gt;The PyDy project is searching for ideal candidates to participate in Google’s
+Summer of Code (GSoC). Ideal candidates should be a student and have a strong
+interest in dynamics, visualization/animation, and have experience with Python,
+C/C++, and/or Javascript. PyDy has been developed during three previous GSoC
+grants as part of the &lt;a class=&quot;reference external&quot; href=&quot;http://www.sympy.org&quot;&gt;SymPy project&lt;/a&gt;. The core
+software can derive symbolic equations of motion of complex multibody systems.
+&lt;a class=&quot;reference external&quot; href=&quot;http://www.moorepants.info/blog/npendulum.html&quot;&gt;This example problem&lt;/a&gt; gives
+you an idea of the current capabilities. This year we are focusing on code
+which interfaces these symbolic equations with modern tools for simulation and
+visualization (plotting and 3D animation) which will be developed under SymPy
+and other relevant projects. The accepted applicant(s) will get high level
+experience in Python, C/C++, and Javascript languages, agile open source
+development practices, version control, large scale collaboration, and
+multibody dynamics including Kane’s and Lagrange’s methods.&lt;/p&gt;
+&lt;p&gt;If you are interested in applying check out the
+&lt;tt class=&quot;xref doc docutils literal&quot;&gt;&lt;span class=&quot;pre&quot;&gt;getting&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;started&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;page&lt;/span&gt;&lt;/tt&gt;. Then send an
+email to the
+&lt;a class=&quot;reference external&quot; href=&quot;https://groups.google.com/forum/?fromgroups#!forum/pydy&quot;&gt;PyDy mailing list&lt;/a&gt;
+with a brief statement explaining your experience and why you think you are a
+good candidate for the position(s). The PyDy team will work directly with the
+top candidates to strengthen their GSoC applications.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>
