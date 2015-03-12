@@ -2,6 +2,7 @@ Google Summer of Code 2013
 ==========================
 
 .. post:: 23 Feb, 2013
+   :category: Google Summer of Code
 
 Want to develop multibody dynamics software this summer in a large
 collaborative open source team?

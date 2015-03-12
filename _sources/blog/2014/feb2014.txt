@@ -2,6 +2,7 @@ Google Summer of Code 2014
 ==========================
 
 .. post:: 12 Feb, 2014
+   :category: Google Summer of Code
 
 Google Summer of Code is upon us again. PyDy will likely be participating as
 it's own organization or under the umbrella of another. See the Google Summer
