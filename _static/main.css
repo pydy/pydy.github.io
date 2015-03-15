@@ -1,0 +1,351 @@
+@font-face {
+  font-family: 'Gentium Basic';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gentium Basic'), local('GentiumBasic'), url(http://fonts.gstatic.com/s/gentiumbasic/v7/KCktj43blvLkhOTolFn-MWYKogTrBb-Yb2DFwx30qLM.woff2) format('woff2'), url(http://fonts.gstatic.com/s/gentiumbasic/v7/KCktj43blvLkhOTolFn-MZ_RtrTXGeaL_Dia6_H9gNs.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+html {
+  background-color: #EEEEEE;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  margin-bottom: 0;
+  font-family: 'Open Sans', serif;
+
+}
+
+h1 {
+  font: 'Open Sans Light';
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 10;
+}
+
+h4 {
+  font-style: italic;
+}
+
+a:link {
+    color: #3498db;
+}
+
+a:visited {
+    color: #3498db;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+a:active {
+    color: #3498db;
+}
+
+select {
+  font-family: 'Open Sans', sans-serif;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+code {
+  font-family: monospace;
+}
+
+.header .branding {
+  margin-top: 10px;
+  font-size: 30px;
+  color: white;
+}
+
+.logo {
+  display: inline;
+}
+
+.site-title {
+  vertical-align: middle;
+  padding-left: 10px;
+  display: inline;
+}
+
+.header .container {
+
+  background-color: #3498db;
+  padding: 5px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 5px #3498db;
+  -webkit-box-shadow: 0 0 5px #3498db;
+  box-shadow: 0 0 5px #3498db;
+}
+
+.header .container a:hover{
+  text-decoration: underline;
+}
+
+.header .container ul {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  display: inline-block;
+  color: white;
+}
+
+ul li a{
+  font-size: 17px;
+  text-decoration: none;
+}
+
+ul li a:hover{
+  text-decoration: underline;
+}
+
+.header .container ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+.header .container ul li a:hover{
+  text-decoration: underline;
+}
+
+.header .container ul li{
+  display: inline;
+  padding: 0 10px;
+}
+
+.logo .image {
+  float: left;
+  clear: none;
+  height: 60%;
+  width: 57%;
+  padding-left: 60px;
+  margin-bottom: 30px;
+}
+
+.nav-toc{
+  width:100%;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 5px #3498db;
+  -webkit-box-shadow: 0 0 5px #3498db;
+  box-shadow: 0 0 5px #3498db;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav-download {
+  margin-bottom: 20px;
+  padding: 0 10px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 5px #3498db;
+  -webkit-box-shadow: 0 0 5px #3498db;
+  box-shadow: 0 0 5px #3498db;
+  color: white;
+  background-color: #3498db;
+}
+
+.nav-download p{
+  padding: 0;
+  margin: 0;
+}
+
+.nav-download p a{
+  color: white;
+}
+
+.nav-download h3 a{
+  color: white;
+  text-decoration: none;
+}
+
+.nav-download h3{
+  padding-top: 10px;
+  margin-bottom:5px;
+}
+
+.main-nav {
+  float: right;
+  width: 32%;
+}
+
+.nav-toc {
+  margin-top: 245px;
+}
+
+.nav-toc a{
+  text-decoration: none;
+  color: #3498db;
+}
+
+.nav-toc a:hover{
+  text-decoration: underline;
+}
+
+.nav-toc h3{
+  padding: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color:#3498db;
+}
+
+.nav-toc ul{
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+
+.site-desc {
+  width: 100%;
+  float: right;
+}
+
+.splash {
+  margin-top: 20px;
+}
+
+.splash {
+  width: 62%;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 5px #3498db;
+  -webkit-box-shadow: 0 0 5px #3498db;
+  box-shadow: 0 0 5px #3498db;
+  padding: 20px;
+  background-color: white;
+}
+
+.footer {
+  margin:20px 0;
+  clear: both;
+}
+
+.footer .container {
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 5px #3498db;
+  -webkit-box-shadow: 0 0 5px #3498db;
+  box-shadow: 0 0 5px #3498db;
+  background: #3498db;
+  padding: 5px;
+}
+
+.footer .container p {
+  margin: 0;
+  padding: 5px;
+  color: white;
+}
+
+.footer .container p a{
+  color: white;
+}
+
+.footer .container p a:hover{
+  color: #2980b9;
+}
+
+.site-desc .title{
+  color: white;
+  font-size: 28px;
+}
+
+.site-desc p{
+  color: #3498db;
+}
+
+.nav-download p a{
+  color:white;
+  text-decoration: none;
+}
+
+.nav-download p a:hover{
+  text-decoration: underline;
+}
+
+h1:hover .headerlink, h2:hover .headerlink, h3:hover.headerlink, h4:hover .headerlink{
+ visibility: visible;
+}
+
+.headerlink {
+  visibility: hidden;
+}
+
+#pydy {
+  background: #19B5FE;
+  padding-bottom: 4px;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    background-color: #EEEEEE;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo .image {
+    float: left;
+    clear: none;
+    height: 100px;
+    width: 95px;
+    padding-left: 0;
+  }
+
+  .title {
+    width: auto;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .main-nav {
+    float: none;
+    width: auto;
+  }
+
+  .site-desc {
+    width: auto;
+    float: none;
+  }
+
+  .title {
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .splash .container {
+    width: auto;
+  }
+
+  .nav-toc {
+    margin-top: 10px;
+  }
+}

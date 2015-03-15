@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>History &mdash; PyDy Website</title>
+    <title>Download Options &mdash; PyDy Website</title>
     
     <link rel="stylesheet" href="_static/pydy.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -29,8 +29,6 @@
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/main.js"></script>
     <link rel="top" title="PyDy Website" href="index.html" />
-    <link rel="next" title="Google Summer of Code" href="gsoc.html" />
-    <link rel="prev" title="Examples" href="examples/examples.html" />
   
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -60,7 +58,7 @@
     <div class="container">
       <ul>
         <li id="pydy"><a href="index.html">PyDy</a></li>
-        <li><a href="download.html">Download</a></li>
+        <li><a href="#">Download</a></li>
         <li><a href="http://pydy.readthedocs.org">Documentation</a></li>
         <li><a href="examples/examples.html">Examples</a></li>
       </ul>
@@ -139,10 +137,10 @@
       
       <!--
 <h3><a href="index.html">Table Of Contents</a></h3>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="installation/installation_general.html">General Installation Information</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/examples.html">Examples</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gsoc.html">Google Summer of Code</a></li>
 </ul>
 -->
@@ -163,44 +161,57 @@
     <div class="container">
       <div class="desc">
         <p>
-  <div class="section" id="history">
-<h1>History<a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h1>
-<p>Dale Peterson started graduate school at UC Davis in Fall of 2006 and met
-<a class="reference external" href="http://www.moorepants.info/">Jason Moore</a> in the
-[[<a class="reference external" href="http://biosport.ucdavis.edu/">http://biosport.ucdavis.edu/</a><a href="#id1"><span class="problematic" id="id2">|</span></a>Sports Biomechanics Lab]]. They shared a passion
-for bicycles, dynamics and control and had both taken the multibody system
-dynamics course  at UC Davis (MAE 223, taught by <a class="reference external" href="http://mae.ucdavis.edu/faculty/hubbard/hubbard.html">Dr. Mont Hubbard</a> and <a class="reference external" href="http://mae.ucdavis.edu/faculty/eke/eke.html">Dr. Fedelis Eke</a>). This course teaches Kane&#8217;s
-method for deriving equations of motion, and at that time they also taught
-<a class="reference external" href="http://www.autolev.com/">Autolev</a> (now defunct) in the course.  Autolev is
-very powerful at symbolic dynamics but lacks important functionality and they
-both found themselves wanting a richer set of tools for studying bicycles,
-rolling discs, rattlebacks, and other systems that are well described by
-classical mechanics. They dreamed of creating an open source tool that was
-more extensible and nicer to use, but at the time neither of them had the
-programming skills to make the dream a reality.</p>
-<p>In Spring of 2007, Dale took <a class="reference external" href="http://csc.ucdavis.edu/~chaos/">Dr. Jim Crutchfield&#8217;s</a> graduate physics course in nonlinear
-dynamics and chaos, in which all homework was required to be done using Python.
-This was a tall order for a single class! This was Dale&#8217;s favorite course in
-graduate school and his first introduction to chaos and to Python (and some of
-the chaos of Python).  About a year and a half later (December 2008), Dale was
-tinkering with Python and trying to replicate some of the kinematic
-functionality that made Autolev so convenient to use. He got some basic classes
-created and contacted <cite>Ondřej Čertík &lt;http://ondrejcertik.com/&gt;</cite>, the creator
-of the SymPy project to see if he was interested in helping him get started. He
-made a trip up to his apartment one weekend in January of 2009, and before he
-knew it, he had a good chunk of the functionality he was looking for. Whcih was
-really exciting!  Ondřej encouraged Dale to apply to a Google Summer of Code,
-so he did, and he spent the summer of 2009 working on a GSoC project that was a
-separate project from SymPy.  This was a big learning experience, and one of
-the things that was learned by the end of the summer was that the software
-should have been part of the SymPy project, rather than its own standalone
-project. This led to Gilbert Gede (another UC Davis graduate student) taking on
-a second GSoC project in which he ported the <a class="reference external" href="http://code.google.com/p/pydy/">original PyDy code</a> into SymPy as a sub-package
-&#8216;&#8217;sympy.physics.mechanics&#8217;&#8216;. This is what is currently is in the SymPy
-repository. The software was introduced to the UC Davis multibody dynamics
-course at the beginning of 2012, to replace the aging Autolev. A third GoSC
-grant allowed Angadh Nanjangud to add Lagrangian dynamics and many other
-features to the code base during the summer of 2012.</p>
+  <div class="section" id="download-options">
+<h1>Download Options<a class="headerlink" href="#download-options" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="latest-release">
+<h2>Latest release<a class="headerlink" href="#latest-release" title="Permalink to this headline">¶</a></h2>
+<p>Download the latest <a class="reference external" href="https://github.com/pydy/pydy/archive/v0.2.1.zip">zip</a> or <a class="reference external" href="https://github.com/pydy/pydy/archive/v0.2.1.tar.gz">tar.gz</a> of the latest <a class="reference external" href="https://github.com/pydy/pydy/releases/tag/v0.2.1">release</a>.
+Extract the archive, on unix systems (Linux, BSD, Mac OS X, Cygwin, etc.) can be done with the command:</p>
+<div class="highlight-python"><div class="highlight"><pre>$ tar xzf pydy-*.tar.gz
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-python"><div class="highlight"><pre>$ unzip xzf pydy-*.zip
+</pre></div>
+</div>
+<p>It can be installed after extracting by:</p>
+<div class="highlight-python"><div class="highlight"><pre>$ python setup.py install
+</pre></div>
+</div>
+<p>in the project&#8217;s root directory. (You might have to use &#8220;sudo&#8221; for system wide install)</p>
+</div>
+<div class="section" id="previous-releases">
+<h2>Previous releases<a class="headerlink" href="#previous-releases" title="Permalink to this headline">¶</a></h2>
+<p>You can access all the previous releases from the [[release&#8217;s page|https://github.com/pydy/pydy/releases]].</p>
+<p>This is useful if the latest release do not work for you for some reason.</p>
+<p>Development Version</p>
+<p>To get the git repository, use:</p>
+<div class="highlight-python"><div class="highlight"><pre>$ git clone git://github.com/pydy/pydy.git
+</pre></div>
+</div>
+<p>then follow the instructions in the README file.</p>
+<p>And you can also access the git repository on the web: <a class="reference external" href="https://github.com/pydy/pydy">https://github.com/pydy/pydy</a></p>
+</div>
+<div class="section" id="packages">
+<h2>Packages<a class="headerlink" href="#packages" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pypi">
+<h3>PyPi<a class="headerlink" href="#pypi" title="Permalink to this headline">¶</a></h3>
+<p>If you have <tt class="docutils literal"><span class="pre">pip</span></tt> installed, you can install by:</p>
+<div class="highlight-python"><div class="highlight"><pre>$ pip install pydy
+</pre></div>
+</div>
+<p>or, you can manually get the package from PyPi by:</p>
+<div class="highlight-python"><div class="highlight"><pre>$ wget https://pypi.python.org/packages/source/p/pydy/pydy-0.2.1.tar.gz
+</pre></div>
+</div>
+<p>extract and install by:</p>
+<div class="highlight-python"><div class="highlight"><pre>$ tar -zxvf pydy-0.2.1.tar.gz
+$ cd pydy-0.2.1
+$ python setup.py install
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 
   <div class="section">

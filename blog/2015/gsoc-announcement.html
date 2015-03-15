@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 
 
@@ -7,14 +6,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>PyDy will participate in Google Summer of Code 2015 &mdash; The PyDy Website</title>
+    <title>PyDy will participate in Google Summer of Code 2015 &mdash; PyDy Website</title>
     
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pydy.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/main.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/bootstrap-3.2.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/bootstrap-3.2.0/css/bootstrap-theme.min.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Gentium+Basic" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -29,15 +27,13 @@
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="../../_static/bootstrap-3.2.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="The PyDy Website" href="../../index.html" />
+    <script type="text/javascript" src="../../_static/main.js"></script>
+    <link rel="top" title="PyDy Website" href="../../index.html" />
   
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name='viewport'
+   content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   
@@ -50,98 +46,48 @@
   </head>
   <body>
 
-  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="../../index.html">
-          PyDy</a>
-        <span class="navbar-text navbar-version pull-left"><b></b></span>
-      </div>
-
-        <div class="collapse navbar-collapse nav-collapse">
-          <ul class="nav navbar-nav">
-            
-            
-              <li class="dropdown globaltoc-container">
-  <a role="button"
-     id="dLabelGlobalToc"
-     data-toggle="dropdown"
-     data-target="#"
-     href="../../index.html">Site <b class="caret"></b></a>
-  <ul class="dropdown-menu globaltoc"
-      role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">PyDy: Multibody Dynamics with Python</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../installation/installation_general.html">General Installation Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../history.html">History</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gsoc.html">Google Summer of Code</a></li>
-</ul>
-</ul>
-</li>
-              
-                <li class="dropdown">
-  <a role="button"
-     id="dLabelLocalToc"
-     data-toggle="dropdown"
-     data-target="#"
-     href="#">Page <b class="caret"></b></a>
-  <ul class="dropdown-menu localtoc"
-      role="menu"
-      aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">PyDy will participate in Google Summer of Code 2015</a><ul>
-<li><a class="reference internal" href="#general-information">General Information</a></li>
-<li><a class="reference internal" href="#for-students">For Students</a></li>
-<li><a class="reference internal" href="#for-mentors">For Mentors</a></li>
-</ul>
-</li>
-</ul>
-</ul>
-</li>
-              
-            
-            
-              
-                
-              
-            
-            
-            
-            
-              <li class="hidden-sm">
-<div id="sourcelink">
-  <a href="../../_sources/blog/2015/gsoc-announcement.txt"
-     rel="nofollow">Source</a>
-</div></li>
-            
-          </ul>
-
-          
-            
-<form class="navbar-form navbar-right" action="../../search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
-          
-        </div>
-    </div>
+<div style="display: none;" id="MathJax_Message"></div>
+<div class="wrapper">
+  <div id="top">
+    <a href="#top" title="Back to top">
+      <i class="icon-arrow-up"></i>
+      <span class="visuallyhidden">Back to top</span>
+    </a>
   </div>
+  <header class="header">
+    <div class="container">
+      <ul>
+        <li id="pydy"><a href="../../index.html">PyDy</a></li>
+        <li><a href="../../download.html">Download</a></li>
+        <li><a href="http://pydy.readthedocs.org">Documentation</a></li>
+        <li><a href="../../examples/examples.html">Examples</a></li>
+      </ul>
+    </div>
+  </header>
+</div>
 
-<div class="container">
-  <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary">
+
+
+<style type="text/css">
+.section-home a {color:#fff !important;border-color:#fff !important;}
+#top {display:none !important;}
+.topic-pager {display:none;}
+</style>
+
+<div class="main-body">
+  <div class="main-nav" id="main-nav">
+    <div id="site-desc" class="site-desc">
+      <div class="logo">
+        <img class="image"src="_static/logo.svg">
+      </div>
+    </div> 
+
+    <div class="nav-toc">
+      
+        
+        
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
   
   
   <h2>
@@ -217,8 +163,33 @@
 
         </div>
       </div>
-    <div class="col-md-9">
       
+      <!--
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation/installation_general.html">General Installation Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gsoc.html">Google Summer of Code</a></li>
+</ul>
+-->
+      </div>
+    <div class="nav-download">
+      <h3>Download</a></h3>
+      <p>
+        <a href="https://github.com/pydy/pydy/archive/v0.2.1.zip">
+        Latest Version</a>
+      </p>
+      <p>
+        <a href="https://github.com/pydy/pydy/archive/master.zip">
+        Development Version</a>
+      </p>
+    </div>
+  </div>
+  <div class="splash">
+    <div class="container">
+      <div class="desc">
+        <p>
   <div class="section" id="pydy-will-participate-in-google-summer-of-code-2015">
 <h1>PyDy will participate in Google Summer of Code 2015<a class="headerlink" href="#pydy-will-participate-in-google-summer-of-code-2015" title="Permalink to this headline">¶</a></h1>
 <p>Google Summer of Code season is rapidly approaching and we are happy to
@@ -300,20 +271,18 @@ recognized as a mentor.</li>
   
   
   </div>
-
+</p>
+      </div>
     </div>
-      
   </div>
 </div>
+
 <footer class="footer">
   <div class="container">
-    <p class="pull-right">
-      <a href="#">Back to top</a>
-      
-    </p>
     <p>
-        &copy; Copyright 2015, PyDy Team.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+          &copy; Copyright 2015, PyDy Team.
+        Created using
+        <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
     </p>
   </div>
 </footer>

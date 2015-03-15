@@ -3,12 +3,6 @@ PyDy: Multibody Dynamics with Python
 
 Introduction
 ------------
-
-.. container:: floatleft
-
-   .. image:: assets/pydy-logo.svg
-      :width: 200px
-
 Welcome to the PyDy project website. PyDy, short for Python Dynamics, is a both
 a *workflow* that utlizes an array of scientific tools written in the Python
 programming language to study multibody dynamics and a set of software packages

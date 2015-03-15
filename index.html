@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 
 
@@ -7,14 +6,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>PyDy: Multibody Dynamics with Python &mdash; The PyDy Website</title>
+    <title>PyDy: Multibody Dynamics with Python &mdash; PyDy Website</title>
     
-    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pydy.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/main.css" type="text/css" />
     <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.2.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.2.0/css/bootstrap-theme.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Gentium+Basic" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -29,16 +27,14 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.2.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="The PyDy Website" href="#" />
+    <script type="text/javascript" src="_static/main.js"></script>
+    <link rel="top" title="PyDy Website" href="#" />
     <link rel="next" title="General Installation Information" href="installation/installation_general.html" />
   
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name='viewport'
+   content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   
@@ -51,103 +47,48 @@
   </head>
   <body>
 
-  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          PyDy</a>
-        <span class="navbar-text navbar-version pull-left"><b></b></span>
-      </div>
-
-        <div class="collapse navbar-collapse nav-collapse">
-          <ul class="nav navbar-nav">
-            
-            
-              <li class="dropdown globaltoc-container">
-  <a role="button"
-     id="dLabelGlobalToc"
-     data-toggle="dropdown"
-     data-target="#"
-     href="#">Site <b class="caret"></b></a>
-  <ul class="dropdown-menu globaltoc"
-      role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="">PyDy: Multibody Dynamics with Python</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="installation/installation_general.html">General Installation Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="examples/examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gsoc.html">Google Summer of Code</a></li>
-</ul>
-</ul>
-</li>
-              
-                <li class="dropdown">
-  <a role="button"
-     id="dLabelLocalToc"
-     data-toggle="dropdown"
-     data-target="#"
-     href="#">Page <b class="caret"></b></a>
-  <ul class="dropdown-menu localtoc"
-      role="menu"
-      aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">PyDy: Multibody Dynamics with Python</a><ul>
-<li><a class="reference internal" href="#introduction">Introduction</a></li>
-<li><a class="reference internal" href="#site-overview">Site Overview</a><ul>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</ul>
-</li>
-              
-            
-            
-              
-                
-  <li>
-    <a href="installation/installation_general.html" title="Next Chapter: General Installation Information"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">General Installa... &raquo;</span>
+<div style="display: none;" id="MathJax_Message"></div>
+<div class="wrapper">
+  <div id="top">
+    <a href="#top" title="Back to top">
+      <i class="icon-arrow-up"></i>
+      <span class="visuallyhidden">Back to top</span>
     </a>
-  </li>
-              
-            
-            
-            
-            
-              <li class="hidden-sm">
-<div id="sourcelink">
-  <a href="_sources/index.txt"
-     rel="nofollow">Source</a>
-</div></li>
-            
-          </ul>
-
-          
-            
-<form class="navbar-form navbar-right" action="search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
-          
-        </div>
-    </div>
   </div>
+  <header class="header">
+    <div class="container">
+      <ul>
+        <li id="pydy"><a href="#">PyDy</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="http://pydy.readthedocs.org">Documentation</a></li>
+        <li><a href="examples/examples.html">Examples</a></li>
+      </ul>
+    </div>
+  </header>
+</div>
 
-<div class="container">
-  <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary">
+
+
+<style type="text/css">
+.section-home a {color:#fff !important;border-color:#fff !important;}
+#top {display:none !important;}
+.topic-pager {display:none;}
+</style>
+
+<div class="main-body">
+  <div class="main-nav" id="main-nav">
+    <div id="site-desc" class="site-desc">
+      <div class="logo">
+        <img class="image"src="_static/logo.svg">
+      </div>
+    </div> 
+
+    <div class="nav-toc">
+      
+        
+        
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
 
 
   <h3><a href="blog.html">Recent Posts</a></h3>
@@ -194,15 +135,37 @@
 
         </div>
       </div>
-    <div class="col-md-9">
       
+      <!--
+<h3><a href="#">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation/installation_general.html">General Installation Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gsoc.html">Google Summer of Code</a></li>
+</ul>
+-->
+      </div>
+    <div class="nav-download">
+      <h3>Download</a></h3>
+      <p>
+        <a href="https://github.com/pydy/pydy/archive/v0.2.1.zip">
+        Latest Version</a>
+      </p>
+      <p>
+        <a href="https://github.com/pydy/pydy/archive/master.zip">
+        Development Version</a>
+      </p>
+    </div>
+  </div>
+  <div class="splash">
+    <div class="container">
+      <div class="desc">
+        <p>
   <div class="section" id="pydy-multibody-dynamics-with-python">
 <h1>PyDy: Multibody Dynamics with Python<a class="headerlink" href="#pydy-multibody-dynamics-with-python" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<div class="floatleft container">
-<a class="reference internal image-reference" href="_images/pydy-logo.svg"><img src="_images/pydy-logo.svg" width="200px" /></a>
-</div>
 <p>Welcome to the PyDy project website. PyDy, short for Python Dynamics, is a both
 a <em>workflow</em> that utlizes an array of scientific tools written in the Python
 programming language to study multibody dynamics and a set of software packages
@@ -238,20 +201,18 @@ the popular scientific Python stack such as <a class="reference external" href="
   
   
   </div>
-
+</p>
+      </div>
     </div>
-      
   </div>
 </div>
+
 <footer class="footer">
   <div class="container">
-    <p class="pull-right">
-      <a href="#">Back to top</a>
-      
-    </p>
     <p>
-        &copy; Copyright 2015, PyDy Team.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+          &copy; Copyright 2015, PyDy Team.
+        Created using
+        <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
     </p>
   </div>
 </footer>
