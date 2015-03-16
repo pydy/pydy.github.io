@@ -195,11 +195,12 @@ ul li a:hover{
 
 .main-nav {
   float: right;
+  clear: both;
   width: 32%;
 }
 
-.nav-toc {
-  margin-top: 245px;
+#main-nav2 {
+  clear: none;
 }
 
 .nav-toc a{
@@ -229,6 +230,7 @@ ul li a:hover{
 }
 
 .splash {
+  float: left;
   margin-top: 20px;
 }
 
@@ -310,14 +312,6 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover.headerlink, h4:hover .heade
     margin-right: auto;
   }
 
-  .logo .image {
-    float: left;
-    clear: none;
-    height: 100px;
-    width: 95px;
-    padding-left: 0;
-  }
-
   .title {
     width: auto;
     padding: 0;
@@ -331,9 +325,22 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover.headerlink, h4:hover .heade
     width: auto;
   }
 
+  .logo .image {
+    float: none;
+    clear: none;
+    width: 60%;
+    margin: auto;
+    padding-left: 0;
+  }
+
   .site-desc {
     width: auto;
     float: none;
+  }
+
+  #main-nav2 {
+    margin-top: 10px;
+    clear: both;
   }
 
   .title {
@@ -343,6 +350,11 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover.headerlink, h4:hover .heade
 
   .splash .container {
     width: auto;
+  }
+
+  .splash {
+    width: auto;
+    margin-bottom: 20px;
   }
 
   .nav-toc {
