@@ -90,8 +90,10 @@
 <h1>Download Options<a class="headerlink" href="#download-options" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="latest-release">
 <h2>Latest release<a class="headerlink" href="#latest-release" title="Permalink to this headline">¶</a></h2>
-<p>Download the latest <a class="reference external" href="https://github.com/pydy/pydy/archive/v0.2.1.zip">zip</a> or <a class="reference external" href="https://github.com/pydy/pydy/archive/v0.2.1.tar.gz">tar.gz</a> of the latest <a class="reference external" href="https://github.com/pydy/pydy/releases/tag/v0.2.1">release</a>.
-Extract the archive, on unix systems (Linux, BSD, Mac OS X, Cygwin, etc.) can be done with the command:</p>
+<p>The latest release can be downloaded from Github:</p>
+<p><a class="reference external" href="https://github.com/pydy/pydy/releases">https://github.com/pydy/pydy/releases</a></p>
+<p>Extract the archive, on unix systems (Linux, BSD, Mac OS X, Cygwin, etc.) can
+be done with the command:</p>
 <div class="highlight-python"><div class="highlight"><pre>$ tar xzf pydy-*.tar.gz
 </pre></div>
 </div>
@@ -99,7 +101,8 @@ Extract the archive, on unix systems (Linux, BSD, Mac OS X, Cygwin, etc.) can be
 <div class="highlight-python"><div class="highlight"><pre>$ unzip xzf pydy-*.zip
 </pre></div>
 </div>
-<p>It can be installed after extracting by:</p>
+<p>It can be installed after extracting by running the following command in the
+source directory:</p>
 <div class="highlight-python"><div class="highlight"><pre>$ python setup.py install
 </pre></div>
 </div>
@@ -107,9 +110,12 @@ Extract the archive, on unix systems (Linux, BSD, Mac OS X, Cygwin, etc.) can be
 </div>
 <div class="section" id="previous-releases">
 <h2>Previous releases<a class="headerlink" href="#previous-releases" title="Permalink to this headline">¶</a></h2>
-<p>You can access all the previous releases from the [[release&#8217;s page|https://github.com/pydy/pydy/releases]].</p>
-<p>This is useful if the latest release do not work for you for some reason.</p>
-<p>Development Version</p>
+<p>You can access all the previous releases from the [[release&#8217;s
+page|https://github.com/pydy/pydy/releases]]. This is useful if the latest
+release does not work for you for some reason.</p>
+</div>
+<div class="section" id="development-version">
+<h2>Development Version<a class="headerlink" href="#development-version" title="Permalink to this headline">¶</a></h2>
 <p>To get the git repository, use:</p>
 <div class="highlight-python"><div class="highlight"><pre>$ git clone git://github.com/pydy/pydy.git
 </pre></div>
@@ -121,18 +127,29 @@ Extract the archive, on unix systems (Linux, BSD, Mac OS X, Cygwin, etc.) can be
 <h2>Packages<a class="headerlink" href="#packages" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="pypi">
 <h3>PyPi<a class="headerlink" href="#pypi" title="Permalink to this headline">¶</a></h3>
+<p>The source distributions are hosted on PyPi at:</p>
+<p><a class="reference external" href="https://pypi.python.org/pypi/pydy">https://pypi.python.org/pypi/pydy</a></p>
 <p>If you have <tt class="docutils literal"><span class="pre">pip</span></tt> installed, you can install by:</p>
 <div class="highlight-python"><div class="highlight"><pre>$ pip install pydy
 </pre></div>
 </div>
 <p>or, you can manually get the package from PyPi by:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ wget https://pypi.python.org/packages/source/p/pydy/pydy-0.2.1.tar.gz
+<div class="highlight-python"><div class="highlight"><pre>$ wget https://pypi.python.org/packages/source/p/pydy/pydy-X.X.X.tar.gz
 </pre></div>
 </div>
 <p>extract and install by:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ tar -zxvf pydy-0.2.1.tar.gz
+<div class="highlight-python"><div class="highlight"><pre>$ tar -zxvf pydy-X.X.X.tar.gz
 $ cd pydy-0.2.1
 $ python setup.py install
+</pre></div>
+</div>
+</div>
+<div class="section" id="binstar">
+<h3>Binstar<a class="headerlink" href="#binstar" title="Permalink to this headline">¶</a></h3>
+<p>Binary packages are hosted at Binstar:</p>
+<p><a class="reference external" href="https://binstar.org/pydy/pydy">https://binstar.org/pydy/pydy</a></p>
+<p>These can be installed with conda:</p>
+<div class="highlight-python"><div class="highlight"><pre>$ conda install -c pydy pydy
 </pre></div>
 </div>
 </div>
@@ -160,6 +177,8 @@ $ python setup.py install
   <ul>
     
     
+      <li><a href="blog/2015/0-3-0-release-announcement.html">18 Jun, 2015 - PyDy 0.3.0 Has Been Released</a></li>
+    
       <li><a href="blog/2015/gsoc-announcement.html">11 Mar, 2015 - PyDy will participate in Google Summer of Code 2015</a></li>
     
       <li><a href="blog/2014/feb2014.html">12 Feb, 2014 - Google Summer of Code 2014</a></li>
@@ -167,8 +186,6 @@ $ python setup.py install
       <li><a href="blog/2014/scipy2014.html">22 Jan, 2014 - PyDy at SciPy 2014</a></li>
     
       <li><a href="blog/2013/may31_2013.html">31 May, 2013 - Google Summer of Code 2013 Results</a></li>
-    
-      <li><a href="blog/2013/first_post.html">23 Feb, 2013 - Google Summer of Code 2013</a></li>
     
   </ul>
 
@@ -179,13 +196,17 @@ $ python setup.py install
     <li><a href="blog/category/google-summer-of-code.html">Google Summer of Code (3)</a></li>
     
   
+    
+    <li><a href="blog/category/releases.html">Releases (1)</a></li>
+    
+  
   </ul>
 
   <h3><a href="blog/archive.html">Archives</a></h3>
   <ul>
   
     
-    <li><a href="blog/2015.html">2015 (1)</a></li>
+    <li><a href="blog/2015.html">2015 (2)</a></li>
     
   
     
