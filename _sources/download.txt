@@ -11,20 +11,20 @@ https://github.com/pydy/pydy/releases
 Extract the archive, on unix systems (Linux, BSD, Mac OS X, Cygwin, etc.) can
 be done with the command:
 
-.. code-block:: python
+.. code-block:: bash
 
    $ tar xzf pydy-*.tar.gz
 
 or
 
-.. code-block:: python
+.. code-block:: bash
 
    $ unzip xzf pydy-*.zip
 
 It can be installed after extracting by running the following command in the
 source directory:
 
-.. code-block:: python
+.. code-block:: bash
 
    $ python setup.py install
 
@@ -33,16 +33,16 @@ in the project's root directory. (You might have to use "sudo" for system wide i
 Previous releases
 -----------------
 
-You can access all the previous releases from the [[release's
-page|https://github.com/pydy/pydy/releases]]. This is useful if the latest
-release does not work for you for some reason.
+You can access all the previous releases from the `release's page
+<https://github.com/pydy/pydy/releases>`_. This is useful if the latest release
+does not work for you for some reason.
 
 Development Version
 -------------------
 
 To get the git repository, use:
 
-.. code-block:: python
+.. code-block:: bash
 
    $ git clone git://github.com/pydy/pydy.git
 
@@ -62,31 +62,36 @@ https://pypi.python.org/pypi/pydy
 
 If you have ``pip`` installed, you can install by:
 
-.. code-block:: python
+.. code-block:: bash
 
    $ pip install pydy
 
 or, you can manually get the package from PyPi by:
 
-.. code-block:: python
+.. code-block:: bash
 
    $ wget https://pypi.python.org/packages/source/p/pydy/pydy-X.X.X.tar.gz
 
 extract and install by:
 
-.. code-block:: python
+.. code-block:: bash
 
    $ tar -zxvf pydy-X.X.X.tar.gz
-   $ cd pydy-0.2.1
+   $ cd pydy-X.X.X
    $ python setup.py install
 
-Binstar
-*******
+Anaconda
+********
 
-Binary packages are hosted at Binstar:
+Binary packages are hosted at:
 
-https://binstar.org/pydy/pydy
+https://anaconda.org/pydy/pydy
 
 These can be installed with conda::
 
    $ conda install -c pydy pydy
+
+To get all of the dependencies for running the PyDy examples you can install
+this metapackage::
+
+   $ conda install -c pydy pydy-examples

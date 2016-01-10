@@ -26,11 +26,11 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/main.js"></script>
     <link rel="top" title="PyDy Website" href="index.html" />
     <link rel="next" title="Google Summer of Code" href="gsoc.html" />
-    <link rel="prev" title="Examples" href="examples/examples.html" />
+    <link rel="prev" title="Documentation" href="documentation.html" />
   
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -39,14 +39,20 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
   
+  <link rel="alternate" type="application/atom+xml"  href="blog/atom.xml" title="Blog">
+  
   
   <style type="text/css">
     ul.ablog-archive {list-style: none; overflow: auto; margin-left: 0px}
     ul.ablog-archive li {float: left; margin-right: 5px; font-size: 80%}
+    ul.postlist a {font-style: italic;}
+    ul.postlist-style-disc {list-style-type: disc;}
+    ul.postlist-style-none {list-style-type: none;}
+    ul.postlist-style-circle {list-style-type: circle;}
   </style>
 
   </head>
-  <body>
+  <body role="document">
 
 <div style="display: none;" id="MathJax_Message"></div>
 <div class="wrapper">
@@ -61,8 +67,7 @@
       <ul>
         <li id="pydy"><a href="index.html">PyDy</a></li>
         <li><a href="download.html">Download</a></li>
-        <li><a href="http://pydy.readthedocs.org">Documentation</a></li>
-        <li><a href="examples/examples.html">Examples</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
       </ul>
     </div>
   </header>
@@ -82,7 +87,7 @@
       <div class="logo">
         <img class="image"src="_static/logo.svg">
       </div>
-    </div> 
+    </div>
   </div>
   <div class="splash">
     <div class="container">
@@ -96,7 +101,7 @@
 for bicycles, dynamics and control and had both taken the multibody system
 dynamics course  at UC Davis (MAE 223, taught by <a class="reference external" href="http://mae.ucdavis.edu/faculty/hubbard/hubbard.html">Dr. Mont Hubbard</a> and <a class="reference external" href="http://mae.ucdavis.edu/faculty/eke/eke.html">Dr. Fedelis Eke</a>). This course teaches Kane&#8217;s
 method for deriving equations of motion, and at that time they also taught
-<a class="reference external" href="http://www.autolev.com/">Autolev</a> (now defunct) in the course.  Autolev is
+<a class="reference external" href="http://www.autolev.com/">Autolev</a> (now defunct) in the course. Autolev is
 very powerful at symbolic dynamics but lacks important functionality and they
 both found themselves wanting a richer set of tools for studying bicycles,
 rolling discs, rattlebacks, and other systems that are well described by
@@ -107,21 +112,21 @@ programming skills to make the dream a reality.</p>
 dynamics and chaos, in which all homework was required to be done using Python.
 This was a tall order for a single class! This was Dale&#8217;s favorite course in
 graduate school and his first introduction to chaos and to Python (and some of
-the chaos of Python).  About a year and a half later (December 2008), Dale was
+the chaos of Python). About a year and a half later (December 2008), Dale was
 tinkering with Python and trying to replicate some of the kinematic
 functionality that made Autolev so convenient to use. He got some basic classes
 created and contacted <cite>Ondřej Čertík &lt;http://ondrejcertik.com/&gt;</cite>, the creator
 of the SymPy project to see if he was interested in helping him get started. He
 made a trip up to his apartment one weekend in January of 2009, and before he
-knew it, he had a good chunk of the functionality he was looking for. Whcih was
-really exciting!  Ondřej encouraged Dale to apply to a Google Summer of Code,
+knew it, he had a good chunk of the functionality he was looking for. Which was
+really exciting! Ondřej encouraged Dale to apply to a Google Summer of Code,
 so he did, and he spent the summer of 2009 working on a GSoC project that was a
-separate project from SymPy.  This was a big learning experience, and one of
+separate project from SymPy. This was a big learning experience, and one of
 the things that was learned by the end of the summer was that the software
 should have been part of the SymPy project, rather than its own standalone
 project. This led to Gilbert Gede (another UC Davis graduate student) taking on
 a second GSoC project in which he ported the <a class="reference external" href="http://code.google.com/p/pydy/">original PyDy code</a> into SymPy as a sub-package
-&#8216;&#8217;sympy.physics.mechanics&#8217;&#8216;. This is what is currently is in the SymPy
+<code class="docutils literal"><span class="pre">sympy.physics.mechanics</span></code>. This is what is currently is in the SymPy
 repository. The software was introduced to the UC Davis multibody dynamics
 course at the beginning of 2012, to replace the aging Autolev. A third GoSC
 grant allowed Angadh Nanjangud to add Lagrangian dynamics and many other
@@ -141,13 +146,15 @@ features to the code base during the summer of 2012.</p>
       
         
         
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
 
 
   <h3><a href="blog.html">Recent Posts</a></h3>
   <ul>
     
+    
+      <li><a href="blog/2016/0-3-1-release-announcement.html">06 Jan, 2016 - PyDy 0.3.1 Has Been Released</a></li>
     
       <li><a href="blog/2015/0-3-0-release-announcement.html">18 Jun, 2015 - PyDy 0.3.0 Has Been Released</a></li>
     
@@ -156,8 +163,6 @@ features to the code base during the summer of 2012.</p>
       <li><a href="blog/2014/feb2014.html">12 Feb, 2014 - Google Summer of Code 2014</a></li>
     
       <li><a href="blog/2014/scipy2014.html">22 Jan, 2014 - PyDy at SciPy 2014</a></li>
-    
-      <li><a href="blog/2013/may31_2013.html">31 May, 2013 - Google Summer of Code 2013 Results</a></li>
     
   </ul>
 
@@ -169,13 +174,17 @@ features to the code base during the summer of 2012.</p>
     
   
     
-    <li><a href="blog/category/releases.html">Releases (1)</a></li>
+    <li><a href="blog/category/releases.html">Releases (2)</a></li>
     
   
   </ul>
 
   <h3><a href="blog/archive.html">Archives</a></h3>
   <ul>
+  
+    
+    <li><a href="blog/2016.html">2016 (1)</a></li>
+    
   
     
     <li><a href="blog/2015.html">2015 (2)</a></li>
@@ -197,8 +206,8 @@ features to the code base during the summer of 2012.</p>
       <!--
 <h3><a href="index.html">Table Of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="installation/installation_general.html">General Installation Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="download.html">Download Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">Documentation</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">History</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gsoc.html">Google Summer of Code</a></li>
 </ul>
@@ -207,7 +216,7 @@ features to the code base during the summer of 2012.</p>
     <div class="nav-download">
       <h3>Download</a></h3>
       <p>
-        <a href="https://github.com/pydy/pydy/archive/v0.2.1.zip">
+        <a href="https://github.com/pydy/pydy/archive/v0.3.1.zip">
         Latest Version</a>
       </p>
       <p>
@@ -223,7 +232,7 @@ features to the code base during the summer of 2012.</p>
     <p>
           &copy; Copyright 2015, PyDy Team.
         Created using
-        <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+        <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
     </p>
   </div>
 </footer>

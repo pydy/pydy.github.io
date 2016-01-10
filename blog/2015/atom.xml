@@ -5,7 +5,7 @@
   <updated>2015-06-18T00:00:00Z</updated>
   <link href="pydy.github.io" />
   <link href="pydy.github.io/blog/2015/atom.xml" rel="self" />
-  <generator uri="http://blog.readthedocs.org" version="0.4">ABlog</generator>
+  <generator uri="http://ablog.readthedocs.org" version="0.8.2">ABlog</generator>
   <entry xml:base="pydy.github.io/blog/2015/atom.xml">
     <title type="text">PyDy 0.3.0 Has Been Released</title>
     <id>pydy.github.io/blog/2015/0-3-0-release-announcement.html</id>
@@ -68,7 +68,7 @@ project students can apply under one or both of the umbrella organizations.&lt;/
 &lt;p&gt;We wish all students good luck and hope to hear from you all soon. Below you
 will find more information to get started.&lt;/p&gt;
 &lt;div class=&quot;section&quot; id=&quot;general-information&quot;&gt;
-&lt;h2&gt;General Information&lt;a class=&quot;headerlink&quot; href=&quot;#general-information&quot; title=&quot;Permalink to this headline&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;General Information&lt;/h2&gt;
 &lt;ul class=&quot;simple&quot;&gt;
 &lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/pydy/pydy/wiki/Google-Summer-of-Code&quot;&gt;PyDy GSoC Info&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/sympy/sympy/wiki#gsoc-2015&quot;&gt;SymPy GSoC Info&lt;/a&gt; &lt;a class=&quot;footnote-reference&quot; href=&quot;#id2&quot; id=&quot;id1&quot;&gt;[1]&lt;/a&gt;&lt;/li&gt;
@@ -84,7 +84,7 @@ to also follow the rules setup by the PSF and NumFOCUS.&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;div class=&quot;section&quot; id=&quot;for-students&quot;&gt;
-&lt;h2&gt;For Students&lt;a class=&quot;headerlink&quot; href=&quot;#for-students&quot; title=&quot;Permalink to this headline&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;For Students&lt;/h2&gt;
 &lt;ul class=&quot;simple&quot;&gt;
 &lt;li&gt;Have a look at our &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/pydy/pydy/wiki/GSoC-2015-Ideas&quot;&gt;ideas page&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;See the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/sympy/sympy/wiki/introduction-to-contributing&quot;&gt;introduction to contributing&lt;/a&gt; to SymPy and set up your development
@@ -105,7 +105,7 @@ PyDy will count.&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;div class=&quot;section&quot; id=&quot;for-mentors&quot;&gt;
-&lt;h2&gt;For Mentors&lt;a class=&quot;headerlink&quot; href=&quot;#for-mentors&quot; title=&quot;Permalink to this headline&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;For Mentors&lt;/h2&gt;
 &lt;ul class=&quot;simple&quot;&gt;
 &lt;li&gt;Create a new profile on &lt;a class=&quot;reference external&quot; href=&quot;https://www.google-melange.com/gsoc/homepage/google/gsoc2015&quot;&gt;Melange&lt;/a&gt; (even if you did so in previous years)&lt;/li&gt;
 &lt;li&gt;Connect with both the PSF and NumFOCUS in Melange so that you can be

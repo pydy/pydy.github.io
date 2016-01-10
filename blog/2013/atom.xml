@@ -5,7 +5,7 @@
   <updated>2013-05-31T00:00:00Z</updated>
   <link href="pydy.github.io" />
   <link href="pydy.github.io/blog/2013/atom.xml" rel="self" />
-  <generator uri="http://blog.readthedocs.org" version="0.4">ABlog</generator>
+  <generator uri="http://ablog.readthedocs.org" version="0.8.2">ABlog</generator>
   <entry xml:base="pydy.github.io/blog/2013/atom.xml">
     <title type="text">Google Summer of Code 2013 Results</title>
     <id>pydy.github.io/blog/2013/may31_2013.html</id>
@@ -64,7 +64,7 @@ experience in Python, C/C++, and Javascript languages, agile open source
 development practices, version control, large scale collaboration, and
 multibody dynamics including Kane’s and Lagrange’s methods.&lt;/p&gt;
 &lt;p&gt;If you are interested in applying check out the
-&lt;tt class=&quot;xref doc docutils literal&quot;&gt;&lt;span class=&quot;pre&quot;&gt;getting&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;started&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;page&lt;/span&gt;&lt;/tt&gt;. Then send an
+&lt;code class=&quot;xref doc docutils literal&quot;&gt;&lt;span class=&quot;pre&quot;&gt;getting&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;started&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;page&lt;/span&gt;&lt;/code&gt;. Then send an
 email to the
 &lt;a class=&quot;reference external&quot; href=&quot;https://groups.google.com/forum/?fromgroups#!forum/pydy&quot;&gt;PyDy mailing list&lt;/a&gt;
 with a brief statement explaining your experience and why you think you are a

@@ -2,10 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Blog</title>
   <id>pydy.github.io/blog/atom.xml</id>
-  <updated>2015-06-18T00:00:00Z</updated>
+  <updated>2016-01-06T00:00:00Z</updated>
   <link href="pydy.github.io" />
   <link href="pydy.github.io/blog/atom.xml" rel="self" />
-  <generator uri="http://blog.readthedocs.org" version="0.4">ABlog</generator>
+  <generator uri="http://ablog.readthedocs.org" version="0.8.2">ABlog</generator>
+  <entry xml:base="pydy.github.io/blog/atom.xml">
+    <title type="text">PyDy 0.3.1 Has Been Released</title>
+    <id>pydy.github.io/blog/2016/0-3-1-release-announcement.html</id>
+    <updated>2016-01-06T00:00:00Z</updated>
+    <published>2016-01-06T00:00:00Z</published>
+    <link href="pydy.github.io/blog/2016/0-3-1-release-announcement.html" />
+    <author>
+      <name></name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;pydy-0-3-1-has-been-released&quot;&gt;
+
+&lt;p&gt;Today marks the release of PyDy 0.3.1. The release includes 115 commits since
+0.3.0 with a number of bug fixes. The &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/pydy/pydy#031&quot;&gt;full release notes&lt;/a&gt; provide the details
+of the changes, all of which are fully backwards compatible with 0.3.0.&lt;/p&gt;
+&lt;p&gt;Five people contributed code to this release:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Frédéric Bastien [new contributor]&lt;/li&gt;
+&lt;li&gt;Christopher Dembia&lt;/li&gt;
+&lt;li&gt;Oliver Lee&lt;/li&gt;
+&lt;li&gt;Jason K. Moore&lt;/li&gt;
+&lt;li&gt;Yashu Seth [new contributor]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and many others contributed code reviews and testing.&lt;/p&gt;
+&lt;p&gt;The latest version of PyDy can be installed via pip:&lt;/p&gt;
+&lt;div class=&quot;highlight-python&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;$ pip install pydy
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;or conda:&lt;/p&gt;
+&lt;div class=&quot;highlight-python&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;$ conda install -c pydy pydy
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Please try out the new release and report any issues you find on Github.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+  </entry>
   <entry xml:base="pydy.github.io/blog/atom.xml">
     <title type="text">PyDy 0.3.0 Has Been Released</title>
     <id>pydy.github.io/blog/2015/0-3-0-release-announcement.html</id>
@@ -68,7 +103,7 @@ project students can apply under one or both of the umbrella organizations.&lt;/
 &lt;p&gt;We wish all students good luck and hope to hear from you all soon. Below you
 will find more information to get started.&lt;/p&gt;
 &lt;div class=&quot;section&quot; id=&quot;general-information&quot;&gt;
-&lt;h2&gt;General Information&lt;a class=&quot;headerlink&quot; href=&quot;#general-information&quot; title=&quot;Permalink to this headline&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;General Information&lt;/h2&gt;
 &lt;ul class=&quot;simple&quot;&gt;
 &lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/pydy/pydy/wiki/Google-Summer-of-Code&quot;&gt;PyDy GSoC Info&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/sympy/sympy/wiki#gsoc-2015&quot;&gt;SymPy GSoC Info&lt;/a&gt; &lt;a class=&quot;footnote-reference&quot; href=&quot;#id2&quot; id=&quot;id1&quot;&gt;[1]&lt;/a&gt;&lt;/li&gt;
@@ -84,7 +119,7 @@ to also follow the rules setup by the PSF and NumFOCUS.&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;div class=&quot;section&quot; id=&quot;for-students&quot;&gt;
-&lt;h2&gt;For Students&lt;a class=&quot;headerlink&quot; href=&quot;#for-students&quot; title=&quot;Permalink to this headline&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;For Students&lt;/h2&gt;
 &lt;ul class=&quot;simple&quot;&gt;
 &lt;li&gt;Have a look at our &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/pydy/pydy/wiki/GSoC-2015-Ideas&quot;&gt;ideas page&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;See the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/sympy/sympy/wiki/introduction-to-contributing&quot;&gt;introduction to contributing&lt;/a&gt; to SymPy and set up your development
@@ -105,7 +140,7 @@ PyDy will count.&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;div class=&quot;section&quot; id=&quot;for-mentors&quot;&gt;
-&lt;h2&gt;For Mentors&lt;a class=&quot;headerlink&quot; href=&quot;#for-mentors&quot; title=&quot;Permalink to this headline&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;For Mentors&lt;/h2&gt;
 &lt;ul class=&quot;simple&quot;&gt;
 &lt;li&gt;Create a new profile on &lt;a class=&quot;reference external&quot; href=&quot;https://www.google-melange.com/gsoc/homepage/google/gsoc2015&quot;&gt;Melange&lt;/a&gt; (even if you did so in previous years)&lt;/li&gt;
 &lt;li&gt;Connect with both the PSF and NumFOCUS in Melange so that you can be
@@ -157,36 +192,6 @@ include:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;Keep an eye on the Github repository being used to develop the presentation:
 &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/PythonDynamics/pydy-tutorial-pycon-2014&quot;&gt;PyDy tutorial materials for PYCON 2014&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-</content>
-  </entry>
-  <entry xml:base="pydy.github.io/blog/atom.xml">
-    <title type="text">Google Summer of Code 2013 Results</title>
-    <id>pydy.github.io/blog/2013/may31_2013.html</id>
-    <updated>2013-05-31T00:00:00Z</updated>
-    <published>2013-05-31T00:00:00Z</published>
-    <link href="pydy.github.io/blog/2013/may31_2013.html" />
-    <author>
-      <name></name>
-    </author>
-    <content type="html">&lt;div class=&quot;section&quot; id=&quot;google-summer-of-code-2013-results&quot;&gt;
-
-&lt;p&gt;Google has announced the results for Google Summer of Code. We are proud to
-announce that we got two slots from Google under the Python Software
-Foundation. The following projects have been accepted:&lt;/p&gt;
-&lt;p&gt;Student (Project): Mentor&lt;/p&gt;
-&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;Tarun Gaba (PyDy: Visualization): Jason Moore&lt;/li&gt;
-&lt;li&gt;Varun Josh (PyDy: Code Generation for sympy.physics.mechanics): Jason Moore&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Additionally, two related proposals will be accepted through SymPy that relate
-to PyDy:&lt;/p&gt;
-&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;Prasoon Shukla (Vector calculus module): Stefan Krastanov and Gilbert Gede&lt;/li&gt;
-&lt;li&gt;Sachin Joglekar (Addition of electromagnetism features to sympy.physics):
-Gilbert Gede and Stefan Krastanov&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Join me in congratulating these students on their acceptance.&lt;/p&gt;
 &lt;/div&gt;
 </content>
   </entry>

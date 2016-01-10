@@ -5,7 +5,7 @@
   <updated>2014-02-12T00:00:00Z</updated>
   <link href="pydy.github.io" />
   <link href="pydy.github.io/blog/2014/atom.xml" rel="self" />
-  <generator uri="http://blog.readthedocs.org" version="0.4">ABlog</generator>
+  <generator uri="http://ablog.readthedocs.org" version="0.8.2">ABlog</generator>
   <entry xml:base="pydy.github.io/blog/2014/atom.xml">
     <title type="text">Google Summer of Code 2014</title>
     <id>pydy.github.io/blog/2014/feb2014.html</id>
