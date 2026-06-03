@@ -1,64 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title type="text">Blog - Posted in 2015</title>
-  <id>pydy.github.io/blog/2015/atom.xml</id>
-  <updated>2015-06-18T00:00:00Z</updated>
-  <link href="pydy.github.io" />
-  <link href="pydy.github.io/blog/2015/atom.xml" rel="self" />
-  <generator uri="http://ablog.readthedocs.org" version="0.8.2">ABlog</generator>
-  <entry xml:base="pydy.github.io/blog/2015/atom.xml">
-    <title type="text">PyDy 0.3.0 Has Been Released</title>
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>pydy.github.io</id>
+  <title>Blog - Posted in 2015</title>
+  <updated>2026-06-03T07:53:10.121745+00:00</updated>
+  <link href="pydy.github.io"/>
+  <link href="pydy.github.io/blog/2015/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
+  <entry>
     <id>pydy.github.io/blog/2015/0-3-0-release-announcement.html</id>
-    <updated>2015-06-18T00:00:00Z</updated>
-    <published>2015-06-18T00:00:00Z</published>
-    <link href="pydy.github.io/blog/2015/0-3-0-release-announcement.html" />
-    <author>
-      <name></name>
-    </author>
-    <content type="html">&lt;div class=&quot;section&quot; id=&quot;pydy-0-3-0-has-been-released&quot;&gt;
+    <title>PyDy 0.3.0 Has Been Released</title>
+    <updated>2015-06-18T00:00:00+02:00</updated>
+    <content type="html">&lt;section id="pydy-0-3-0-has-been-released"&gt;
 
 &lt;p&gt;Today marks the release of PyDy 0.3.0. The release includes 500 commits since
 0.2.1 with several major new features, including an overhauled visualizer with
 IPython notebook integration, overhauled code generation, Python 3 support,
-and a new System class. The &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/pydy/pydy#030&quot;&gt;full release notes&lt;/a&gt; provide the details of the
+and a new System class. The &lt;a class="reference external" href="https://github.com/pydy/pydy#030"&gt;full release notes&lt;/a&gt; provide the details of the
 changes, most of which are fully backwards compatible with 0.2.1.&lt;/p&gt;
 &lt;p&gt;Ten people contributed code to this release:&lt;/p&gt;
-&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;Jim Crist&lt;/li&gt;
-&lt;li&gt;Christopher Dembia&lt;/li&gt;
-&lt;li&gt;Tarun Gaba&lt;/li&gt;
-&lt;li&gt;Jinank Jain&lt;/li&gt;
-&lt;li&gt;AMiT Kumar&lt;/li&gt;
-&lt;li&gt;Oliver Lee&lt;/li&gt;
-&lt;li&gt;Max Mertens&lt;/li&gt;
-&lt;li&gt;Jason K. Moore&lt;/li&gt;
-&lt;li&gt;Dale Lukas Peterson&lt;/li&gt;
-&lt;li&gt;Sahil Shekhawat&lt;/li&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Jim Crist&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Christopher Dembia&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tarun Gaba&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Jinank Jain&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;AMiT Kumar&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Oliver Lee&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Max Mertens&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Jason K. Moore&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Dale Lukas Peterson&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Sahil Shekhawat&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;and many others contributed code reviews and testing.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;d like to give special shout outs to Sahil for spending the last two weeks
+&lt;p&gt;I’d like to give special shout outs to Sahil for spending the last two weeks
 squashing tons of bugs and Oliver for adding Python 3 support in the last few
 days before the release.&lt;/p&gt;
 &lt;p&gt;The latest version of PyDy can be installed via pip or conda:&lt;/p&gt;
-&lt;div class=&quot;highlight-python&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;$ pip install pydy
+&lt;div class="highlight-default notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip install pydy
 
 $ conda install -c pydy pydy
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Please try out the new release and report any issues you find on Github.&lt;/p&gt;
-&lt;/div&gt;
+&lt;/section&gt;
 </content>
+    <link href="pydy.github.io/blog/2015/0-3-0-release-announcement.html"/>
+    <summary>Today marks the release of PyDy 0.3.0. The release includes 500 commits since
+0.2.1 with several major new features, including an overhauled visualizer with
+IPython notebook integration, overhauled code generation, Python 3 support,
+and a new System class. The full release notes provide the details of the
+changes, most of which are fully backwards compatible with 0.2.1.</summary>
+    <published>2015-06-18T00:00:00+02:00</published>
   </entry>
-  <entry xml:base="pydy.github.io/blog/2015/atom.xml">
-    <title type="text">PyDy will participate in Google Summer of Code 2015</title>
+  <entry>
     <id>pydy.github.io/blog/2015/gsoc-announcement.html</id>
-    <updated>2015-03-11T00:00:00Z</updated>
-    <published>2015-03-11T00:00:00Z</published>
-    <link href="pydy.github.io/blog/2015/gsoc-announcement.html" />
-    <author>
-      <name></name>
-    </author>
-    <content type="html">&lt;div class=&quot;section&quot; id=&quot;pydy-will-participate-in-google-summer-of-code-2015&quot;&gt;
+    <title>PyDy will participate in Google Summer of Code 2015</title>
+    <updated>2015-03-11T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="pydy-will-participate-in-google-summer-of-code-2015"&gt;
 
 &lt;p&gt;Google Summer of Code season is rapidly approaching and we are happy to
 announce that PyDy will be participating again this year. We are a
@@ -67,54 +64,61 @@ part of SymPy which is under both the PSF and NumFOCUS. Depending on the
 project students can apply under one or both of the umbrella organizations.&lt;/p&gt;
 &lt;p&gt;We wish all students good luck and hope to hear from you all soon. Below you
 will find more information to get started.&lt;/p&gt;
-&lt;div class=&quot;section&quot; id=&quot;general-information&quot;&gt;
+&lt;section id="general-information"&gt;
 &lt;h2&gt;General Information&lt;/h2&gt;
-&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/pydy/pydy/wiki/Google-Summer-of-Code&quot;&gt;PyDy GSoC Info&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/sympy/sympy/wiki#gsoc-2015&quot;&gt;SymPy GSoC Info&lt;/a&gt; &lt;a class=&quot;footnote-reference&quot; href=&quot;#id2&quot; id=&quot;id1&quot;&gt;[1]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://wiki.python.org/moin/SummerOfCode/2015&quot;&gt;PSF GSoC Info&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/numfocus/gsoc&quot;&gt;NumFOCUS GSoC Info&lt;/a&gt;&lt;/li&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/pydy/pydy/wiki/Google-Summer-of-Code"&gt;PyDy GSoC Info&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/sympy/sympy/wiki#gsoc-2015"&gt;SymPy GSoC Info&lt;/a&gt; &lt;a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;1&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://wiki.python.org/moin/SummerOfCode/2015"&gt;PSF GSoC Info&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/numfocus/gsoc"&gt;NumFOCUS GSoC Info&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;table class=&quot;docutils footnote&quot; frame=&quot;void&quot; id=&quot;id2&quot; rules=&quot;none&quot;&gt;
-&lt;colgroup&gt;&lt;col class=&quot;label&quot; /&gt;&lt;col /&gt;&lt;/colgroup&gt;
-&lt;tbody valign=&quot;top&quot;&gt;
-&lt;tr&gt;&lt;td class=&quot;label&quot;&gt;&lt;a class=&quot;fn-backref&quot; href=&quot;#id1&quot;&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Note that we follow the same submission rules as SymPy but you will have
-to also follow the rules setup by the PSF and NumFOCUS.&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;for-students&quot;&gt;
+&lt;aside class="footnote-list brackets"&gt;
+&lt;aside class="footnote brackets" id="id2" role="doc-footnote"&gt;
+&lt;span class="label"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;&lt;a role="doc-backlink" href="#id1"&gt;1&lt;/a&gt;&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/span&gt;
+&lt;p&gt;Note that we follow the same submission rules as SymPy but you will have
+to also follow the rules setup by the PSF and NumFOCUS.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;/aside&gt;
+&lt;/section&gt;
+&lt;section id="for-students"&gt;
 &lt;h2&gt;For Students&lt;/h2&gt;
-&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;Have a look at our &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/pydy/pydy/wiki/GSoC-2015-Ideas&quot;&gt;ideas page&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;See the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/sympy/sympy/wiki/introduction-to-contributing&quot;&gt;introduction to contributing&lt;/a&gt; to SymPy and set up your development
-environment.&lt;/li&gt;
-&lt;li&gt;Hang out with us on &lt;a class=&quot;reference external&quot; href=&quot;https://gitter.im/pydy/pydy&quot;&gt;Gitter&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Joint the PyDy &lt;a class=&quot;reference external&quot; href=&quot;https://groups.google.com/forum/#!forum/pydy&quot;&gt;mailing list&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Start working on your first patch for SymPy or PyDy &lt;a class=&quot;footnote-reference&quot; href=&quot;#id4&quot; id=&quot;id3&quot;&gt;[2]&lt;/a&gt;. Check out the SymPy
-and PyDy issue trackers for issues labeled &amp;#8220;Easy To Fix&amp;#8221;.&lt;/li&gt;
-&lt;li&gt;Create a new profile &lt;a class=&quot;reference external&quot; href=&quot;https://www.google-melange.com/gsoc/homepage/google/gsoc2015&quot;&gt;on Melange&lt;/a&gt; (even if you did so in previous years)&lt;/li&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Have a look at our &lt;a class="reference external" href="https://github.com/pydy/pydy/wiki/GSoC-2015-Ideas"&gt;ideas page&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;See the &lt;a class="reference external" href="https://github.com/sympy/sympy/wiki/introduction-to-contributing"&gt;introduction to contributing&lt;/a&gt; to SymPy and set up your development
+environment.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Hang out with us on &lt;a class="reference external" href="https://gitter.im/pydy/pydy"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Joint the PyDy &lt;a class="reference external" href="https://groups.google.com/forum/#!forum/pydy"&gt;mailing list&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Start working on your first patch for SymPy or PyDy &lt;a class="footnote-reference brackets" href="#id4" id="id3" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;2&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt;. Check out the SymPy
+and PyDy issue trackers for issues labeled “Easy To Fix”.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Create a new profile &lt;a class="reference external" href="https://www.google-melange.com/gsoc/homepage/google/gsoc2015"&gt;on Melange&lt;/a&gt; (even if you did so in previous years)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;table class=&quot;docutils footnote&quot; frame=&quot;void&quot; id=&quot;id4&quot; rules=&quot;none&quot;&gt;
-&lt;colgroup&gt;&lt;col class=&quot;label&quot; /&gt;&lt;col /&gt;&lt;/colgroup&gt;
-&lt;tbody valign=&quot;top&quot;&gt;
-&lt;tr&gt;&lt;td class=&quot;label&quot;&gt;&lt;a class=&quot;fn-backref&quot; href=&quot;#id3&quot;&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A patch is required for your application. If you want to work on a
+&lt;aside class="footnote-list brackets"&gt;
+&lt;aside class="footnote brackets" id="id4" role="doc-footnote"&gt;
+&lt;span class="label"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;&lt;a role="doc-backlink" href="#id3"&gt;2&lt;/a&gt;&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/span&gt;
+&lt;p&gt;A patch is required for your application. If you want to work on a
 symbolic based project you need to patch SymPy otherwise a patch to SymPy or
-PyDy will count.&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;for-mentors&quot;&gt;
+PyDy will count.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;/aside&gt;
+&lt;/section&gt;
+&lt;section id="for-mentors"&gt;
 &lt;h2&gt;For Mentors&lt;/h2&gt;
-&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;Create a new profile on &lt;a class=&quot;reference external&quot; href=&quot;https://www.google-melange.com/gsoc/homepage/google/gsoc2015&quot;&gt;Melange&lt;/a&gt; (even if you did so in previous years)&lt;/li&gt;
-&lt;li&gt;Connect with both the PSF and NumFOCUS in Melange so that you can be
-recognized as a mentor.&lt;/li&gt;
-&lt;li&gt;Add your name to the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/pydy/pydy/wiki/Google-Summer-of-Code#2015&quot;&gt;PyDy wiki&lt;/a&gt; and the &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/numfocus/gsoc/blob/master/organization/team.md#sympy&quot;&gt;NumFOCUS list&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/pydy/pydy/wiki/GSoC-2015-Ideas&quot;&gt;Edit our ideas page&lt;/a&gt;.&lt;/li&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Create a new profile on &lt;a class="reference external" href="https://www.google-melange.com/gsoc/homepage/google/gsoc2015"&gt;Melange&lt;/a&gt; (even if you did so in previous years)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Connect with both the PSF and NumFOCUS in Melange so that you can be
+recognized as a mentor.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Add your name to the &lt;a class="reference external" href="https://github.com/pydy/pydy/wiki/Google-Summer-of-Code#2015"&gt;PyDy wiki&lt;/a&gt; and the &lt;a class="reference external" href="https://github.com/numfocus/gsoc/blob/master/organization/team.md#sympy"&gt;NumFOCUS list&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/pydy/pydy/wiki/GSoC-2015-Ideas"&gt;Edit our ideas page&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;/section&gt;
+&lt;/section&gt;
 </content>
+    <link href="pydy.github.io/blog/2015/gsoc-announcement.html"/>
+    <summary>Google Summer of Code season is rapidly approaching and we are happy to
+announce that PyDy will be participating again this year. We are a
+sub-organization under the Python Software Foundation and our symbolic code is
+part of SymPy which is under both the PSF and NumFOCUS. Depending on the
+project students can apply under one or both of the umbrella organizations.</summary>
+    <published>2015-03-11T00:00:00+01:00</published>
   </entry>
 </feed>
