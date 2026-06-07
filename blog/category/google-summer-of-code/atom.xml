@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>pydy.github.io</id>
   <title>Blog - Posts in Google Summer of Code</title>
-  <updated>2026-06-03T07:53:10.112226+00:00</updated>
+  <updated>2026-06-07T14:42:15.199884+00:00</updated>
   <link href="pydy.github.io"/>
   <link href="pydy.github.io/blog/category/google-summer-of-code/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>

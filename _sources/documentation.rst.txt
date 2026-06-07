@@ -44,3 +44,4 @@ There are additionally a variety of examples which can be found here:
 - `The PyDy Example Repository <https://github.com/pydy/pydy/tree/master/examples>`_
 - `N Link Pendulum <http://www.moorepants.info/blog/npendulum.html>`_ (also in the PyDy example repo)
 - `A bicycle model <https://github.com/hazelnusse/libbicycle>`_
+- `Peter Stahlecker's SymPy, PyDy and Opty Examples <https://www.pydy.org/pst-notebooks>`_
